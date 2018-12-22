@@ -1,19 +1,19 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Header from '../components/Header'
+import App from '../components/App'
 
 describe('<App />', () => {
   var wrapper
 
   beforeAll(() => {
-    wrapper = shallow(<Header />)
+    wrapper = shallow(<App />)
   })
 
   it('matches the snapshot', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('renders a header', () => {
-    expect(wrapper.find('header').length).toEqual(1)
+  it('renders the Header component', () => {
+    expect(wrapper.find('Header').length).toEqual(1)
   })
 })
