@@ -5,10 +5,10 @@ import Main from './Main'
 export default class App extends Component {
   render() {
     return (
-      <html>
+      <div>
         <Header />
         <Main />
-      </html>
+      </div>
     )
   }
 }
