@@ -10,6 +10,7 @@ export default class ArticleList extends Component {
 
   componentDidMount() {
     axios.get(config.guardianUrl).then(response => {
+      console.log(response)
       this.setState(prevState => ({
         articles: response.data.response.results
       }))
@@ -23,7 +24,7 @@ export default class ArticleList extends Component {
       >
         <ArticlePreview
           id={index}
-          image={article.fields.thumbnail}
+          imageUrl={article.fields.thumbnail}
           headline={article.webTitle}
           url={article.webUrl}
         />

@@ -1,31 +1,31 @@
-import { config } from '../../src/config'
-
 describe('Viewing headlines', () => {
-  before(() => {
+  beforeEach(() => {
     cy.server()
-    cy.route({
+    cy.route(Cypress.env('guardianUrl'), {
       method: 'GET',
-      url: config.guardianUrl,
       response: {
-        data: {
-          response: {
-            results: [
-              {
-                webTitle: 'TestHeadline',
-                webUrl: 'TestHeadline',
-                fields: {
-                  thumbnail: 'TestThumbnailUrl'
-                }
-              }
-            ]
+        results: [
+          {
+            webTitle: 'TestHeadline',
+            webUrl: 'TestHeadline',
+            fields: {
+              thumbnail: 'TestThumbnailUrl'
+            }
           }
-        }
+        ]
       }
     })
   })
 
   it.skip('shows the correct headline on the page', () => {
-    cy.visit(config.guardianUrl)
-    cy.get('[className=headline]').first().contains('TestHeadline')
+    cy.get('[className="headline"]').first().contains('TestHeadline')
+  })
+
+  it('shows the correct image on the page', () => {
+    cy.visit('http://localhost:3000')
+
+    cy.get('[class="article-image"]').first()
+      .should('have.attr', 'src')
+      .should('include', 'TestThumbnailUrl')
   })
 })
