@@ -9,9 +9,15 @@ jest.useFakeTimers()
 
 describe('<ArticleList />', () => {
   var wrapper
+  var articles
 
   beforeAll(() => {
-    let response = {}
+    articles = [
+      { webTitle: 'Title1', webUrl: 'Url1', fields: { thumbnail: 'Img1' } },
+      { webTitle: 'Title2', webUrl: 'Url2', fields: { thumbnail: 'Img2' } },
+      { webTitle: 'Title3', webUrl: 'Url3', fields: { thumbnail: 'Img3' } }
+    ]
+    let response = { data: { response: { results: articles } } }
     axios.get.mockResolvedValue(response)
     wrapper = shallow(<ArticleList />)
   })
@@ -27,5 +33,9 @@ describe('<ArticleList />', () => {
   it('fetches information from the correct API url when mounted', () => {
     expect(axios.get).toHaveBeenCalledTimes(1)
     expect(axios.get).toHaveBeenCalledWith(config.guardianUrl)
+  })
+
+  it('renders number of article previews based on API response number', () => {
+    expect(wrapper.find('ArticlePreview').length).toEqual(articles.length)
   })
 })

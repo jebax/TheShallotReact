@@ -17,10 +17,124 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "children": Array [
+        <article>
+          <ArticlePreview
+            headline="Title1"
+            id={0}
+            image="Img1"
+            url="Url1"
+          />
+        </article>,
+        <article>
+          <ArticlePreview
+            headline="Title2"
+            id={1}
+            image="Img2"
+            url="Url2"
+          />
+        </article>,
+        <article>
+          <ArticlePreview
+            headline="Title3"
+            id={2}
+            image="Img3"
+            url="Url3"
+          />
+        </article>,
+      ],
       "id": "article-list",
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": <ArticlePreview
+            headline="Title1"
+            id={0}
+            image="Img1"
+            url="Url1"
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "headline": "Title1",
+            "id": 0,
+            "image": "Img1",
+            "url": "Url1",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": <ArticlePreview
+            headline="Title2"
+            id={1}
+            image="Img2"
+            url="Url2"
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "headline": "Title2",
+            "id": 1,
+            "image": "Img2",
+            "url": "Url2",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "host",
+        "props": Object {
+          "children": <ArticlePreview
+            headline="Title3"
+            id={2}
+            image="Img3"
+            url="Url3"
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "headline": "Title3",
+            "id": 2,
+            "image": "Img3",
+            "url": "Url3",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "article",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +143,124 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "children": Array [
+          <article>
+            <ArticlePreview
+              headline="Title1"
+              id={0}
+              image="Img1"
+              url="Url1"
+            />
+          </article>,
+          <article>
+            <ArticlePreview
+              headline="Title2"
+              id={1}
+              image="Img2"
+              url="Url2"
+            />
+          </article>,
+          <article>
+            <ArticlePreview
+              headline="Title3"
+              id={2}
+              image="Img3"
+              url="Url3"
+            />
+          </article>,
+        ],
         "id": "article-list",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": <ArticlePreview
+              headline="Title1"
+              id={0}
+              image="Img1"
+              url="Url1"
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "headline": "Title1",
+              "id": 0,
+              "image": "Img1",
+              "url": "Url1",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": <ArticlePreview
+              headline="Title2"
+              id={1}
+              image="Img2"
+              url="Url2"
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "headline": "Title2",
+              "id": 1,
+              "image": "Img2",
+              "url": "Url2",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": <ArticlePreview
+              headline="Title3"
+              id={2}
+              image="Img3"
+              url="Url3"
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "headline": "Title3",
+              "id": 2,
+              "image": "Img3",
+              "url": "Url3",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "article",
+        },
+      ],
       "type": "div",
     },
   ],
