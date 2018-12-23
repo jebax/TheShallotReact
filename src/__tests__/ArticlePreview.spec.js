@@ -8,7 +8,7 @@ describe('<ArticlePreview />', () => {
   beforeAll(() => {
     wrapper = shallow(
       <ArticlePreview
-        key={0}
+        id={0}
         imageUrl={'TestThumbnailUrl'}
         headline='TestHeadline'
         url='TestUrl'

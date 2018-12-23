@@ -25,6 +25,7 @@ export default class ArticleList extends Component {
           return (
             <ArticlePreview
               key={index}
+              id={index}
               imageUrl={article.fields.thumbnail}
               headline={article.webTitle}
               url={article.webUrl}

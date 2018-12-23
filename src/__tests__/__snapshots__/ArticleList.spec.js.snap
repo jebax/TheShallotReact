@@ -20,16 +20,19 @@ ShallowWrapper {
       "children": Array [
         <ArticlePreview
           headline="Title1"
+          id={0}
           imageUrl="Img1"
           url="Url1"
         />,
         <ArticlePreview
           headline="Title2"
+          id={1}
           imageUrl="Img2"
           url="Url2"
         />,
         <ArticlePreview
           headline="Title3"
+          id={2}
           imageUrl="Img3"
           url="Url3"
         />,
@@ -44,6 +47,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "headline": "Title1",
+          "id": 0,
           "imageUrl": "Img1",
           "url": "Url1",
         },
@@ -57,6 +61,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "headline": "Title2",
+          "id": 1,
           "imageUrl": "Img2",
           "url": "Url2",
         },
@@ -70,6 +75,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "headline": "Title3",
+          "id": 2,
           "imageUrl": "Img3",
           "url": "Url3",
         },
@@ -89,16 +95,19 @@ ShallowWrapper {
         "children": Array [
           <ArticlePreview
             headline="Title1"
+            id={0}
             imageUrl="Img1"
             url="Url1"
           />,
           <ArticlePreview
             headline="Title2"
+            id={1}
             imageUrl="Img2"
             url="Url2"
           />,
           <ArticlePreview
             headline="Title3"
+            id={2}
             imageUrl="Img3"
             url="Url3"
           />,
@@ -113,6 +122,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "headline": "Title1",
+            "id": 0,
             "imageUrl": "Img1",
             "url": "Url1",
           },
@@ -126,6 +136,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "headline": "Title2",
+            "id": 1,
             "imageUrl": "Img2",
             "url": "Url2",
           },
@@ -139,6 +150,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "headline": "Title3",
+            "id": 2,
             "imageUrl": "Img3",
             "url": "Url3",
           },
