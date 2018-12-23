@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import ArticleImage from '../components/ArticleImage'
 
 describe('<ArticleImage />', () => {
@@ -19,5 +19,12 @@ describe('<ArticleImage />', () => {
 
   it('renders an image', () => {
     expect(wrapper.find('.article-image').length).toEqual(1)
+  })
+
+  it('renders its image based on its image url', () => {
+    const secondWrapper = shallow(<ArticleImage imageUrl={'TestImage'} />)
+    const image = secondWrapper.find('.article-image')
+
+    expect(image.props().src).toEqual('TestImage')
   })
 })

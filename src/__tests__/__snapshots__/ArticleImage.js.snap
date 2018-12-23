@@ -18,6 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <img
+        alt=""
         className="article-image"
       />,
       "className": "image-wrapper",
@@ -28,6 +29,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "alt": "",
         "className": "article-image",
         "src": undefined,
       },
@@ -44,6 +46,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <img
+          alt=""
           className="article-image"
         />,
         "className": "image-wrapper",
@@ -54,6 +57,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "alt": "",
           "className": "article-image",
           "src": undefined,
         },

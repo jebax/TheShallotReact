@@ -1,16 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class ArticleImage extends Component {
-  render() {
-    return (
-      <figure
-        className='image-wrapper'
-      >
-        <img
-          className='article-image'
-          src={this.props.imageUrl}
-        />
-      </figure>
-    )
-  }
+const ArticleImage = ({imageUrl}) => {
+  return (
+    <figure
+      className='image-wrapper'
+    >
+      <img
+        alt=''
+        className='article-image'
+        src={imageUrl}
+      />
+    </figure>
+  )
 }
+
+export default ArticleImage
