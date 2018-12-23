@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { shallow } from 'enzyme'
 import ArticleList from '../components/ArticleList'
+import { config } from '../config'
 
 jest.mock('axios')
 jest.useFakeTimers()
@@ -24,10 +25,7 @@ describe('<ArticleList />', () => {
   })
 
   it('fetches information from the correct API url when mounted', () => {
-    let response = {}
-    axios.get.mockResolvedValue(response)
-
-    const secondWrapper = shallow(<ArticleList />)
-    expect(axios.get).toHaveBeenCalledTimes(2)
+    expect(axios.get).toHaveBeenCalledTimes(1)
+    expect(axios.get).toHaveBeenCalledWith(config.guardianUrl)
   })
 })

@@ -16,4 +16,8 @@ describe('<App />', () => {
   it('renders the Header component', () => {
     expect(wrapper.find('Header').length).toEqual(1)
   })
+
+  it('renders the Main component', () => {
+    expect(wrapper.find('Main').length).toEqual(1)
+  })
 })
