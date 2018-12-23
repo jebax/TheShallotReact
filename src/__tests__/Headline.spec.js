@@ -6,7 +6,12 @@ describe('<Headline />', () => {
   var wrapper
 
   beforeAll(() => {
-    wrapper = shallow(<Headline headline='TestHeadline'/>)
+    wrapper = shallow(
+      <Headline
+        id={0}
+        headline='TestHeadline'
+        url='TestUrl'
+      />)
   })
 
   it('matches the snapshot', () => {
@@ -19,11 +24,5 @@ describe('<Headline />', () => {
 
   it('renders a headline', () => {
     expect(wrapper.find('.headline').length).toEqual(1)
-  })
-
-  it('renders its headline based on its headline property', () => {
-    const headline = wrapper.find('.headline')
-
-    expect(headline.text()).toEqual('TestHeadline')
   })
 })

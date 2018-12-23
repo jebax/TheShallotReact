@@ -1,11 +1,27 @@
 describe('Viewing an article', () => {
-  beforeEach(() => {
+  before(() => {
+    cy.server()
+    cy.route(Cypress.env('guardianUrl'), {
+      method: 'GET',
+      response: {
+        results: [
+          {
+            webTitle: 'TestHeadline',
+            webUrl: 'TestHeadline',
+            fields: {
+              thumbnail: 'TestThumbnailUrl'
+            }
+          }
+        ]
+      }
+    })
+
     cy.visit('http://localhost:3000')
   })
 
-  it.skip('has the correct URL', () => {
-    cy.find('[className="headline-text"]').first().click()
+  it('has the correct URL', () => {
+    cy.get('[class="headline"]').first().click()
 
-    cy.url().contains('#articles/1')
+    cy.url().should('include', 'articles/0')
   })
 })

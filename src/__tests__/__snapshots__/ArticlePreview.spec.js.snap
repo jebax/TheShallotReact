@@ -28,6 +28,8 @@ ShallowWrapper {
         />,
         <Headline
           headline="TestHeadline"
+          id={0}
+          url="TestUrl"
         />,
       ],
       "className": "article-preview",
@@ -51,6 +53,8 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "headline": "TestHeadline",
+          "id": 0,
+          "url": "TestUrl",
         },
         "ref": null,
         "rendered": null,
@@ -71,6 +75,8 @@ ShallowWrapper {
           />,
           <Headline
             headline="TestHeadline"
+            id={0}
+            url="TestUrl"
           />,
         ],
         "className": "article-preview",
@@ -94,6 +100,8 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "headline": "TestHeadline",
+            "id": 0,
+            "url": "TestUrl",
           },
           "ref": null,
           "rendered": null,

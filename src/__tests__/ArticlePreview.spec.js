@@ -31,4 +31,9 @@ describe('<ArticlePreview />', () => {
   it('renders an article preview wrapper', () => {
     expect(wrapper.find('.article-preview').length).toEqual(1)
   })
+
+  it('changes the window URL when the headline is clicked', () => {
+    const headline = wrapper.find('Headline')
+    headline.simulate('click', { preventDefault() {} })
+  })
 })

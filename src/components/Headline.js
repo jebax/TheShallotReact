@@ -1,16 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
-const Headline = ({ headline }) => {
+const Headline = ({ id, headline, url }) => {
   return (
     <span className='headline-wrapper'>
-      <h2 className='headline'>{headline}</h2>
+      <Link
+        to={{
+          pathname: `articles/${id}`,
+        }}
+        className='headline'
+      >
+        {headline}
+      </Link>
     </span>
   )
 }
 
 Headline.propTypes = {
-  headline: PropTypes.string.isRequired
+  id: PropTypes.number.isRequired,
+  headline: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
 }
 
 export default Headline
