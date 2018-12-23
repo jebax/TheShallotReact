@@ -3,7 +3,9 @@
 exports[`<Headline /> matches the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Headline />,
+  Symbol(enzyme.__unrendered__): <Headline
+    headline="TestHeadline"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,9 +20,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <h2
-        id="headline"
-      />,
-      "id": "headline-wrapper",
+        className="headline"
+      >
+        TestHeadline
+      </h2>,
+      "className": "headline-wrapper",
     },
     "ref": null,
     "rendered": Object {
@@ -28,10 +32,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "id": "headline",
+        "children": "TestHeadline",
+        "className": "headline",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": "TestHeadline",
       "type": "h2",
     },
     "type": "span",
@@ -43,9 +48,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <h2
-          id="headline"
-        />,
-        "id": "headline-wrapper",
+          className="headline"
+        >
+          TestHeadline
+        </h2>,
+        "className": "headline-wrapper",
       },
       "ref": null,
       "rendered": Object {
@@ -53,10 +60,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "id": "headline",
+          "children": "TestHeadline",
+          "className": "headline",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "TestHeadline",
         "type": "h2",
       },
       "type": "span",

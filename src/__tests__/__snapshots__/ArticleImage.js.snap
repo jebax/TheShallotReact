@@ -3,7 +3,9 @@
 exports[`<ArticleImage /> matches the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ArticleImage />,
+  Symbol(enzyme.__unrendered__): <ArticleImage
+    imageUrl="TestImage"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -20,6 +22,7 @@ ShallowWrapper {
       "children": <img
         alt=""
         className="article-image"
+        src="TestImage"
       />,
       "className": "image-wrapper",
     },
@@ -31,7 +34,7 @@ ShallowWrapper {
       "props": Object {
         "alt": "",
         "className": "article-image",
-        "src": undefined,
+        "src": "TestImage",
       },
       "ref": null,
       "rendered": null,
@@ -48,6 +51,7 @@ ShallowWrapper {
         "children": <img
           alt=""
           className="article-image"
+          src="TestImage"
         />,
         "className": "image-wrapper",
       },
@@ -59,7 +63,7 @@ ShallowWrapper {
         "props": Object {
           "alt": "",
           "className": "article-image",
-          "src": undefined,
+          "src": "TestImage",
         },
         "ref": null,
         "rendered": null,

@@ -10,26 +10,10 @@ export default class ArticleList extends Component {
 
   componentDidMount() {
     axios.get(config.guardianUrl).then(response => {
-      console.log(response)
       this.setState(prevState => ({
         articles: response.data.response.results
       }))
     })
-  }
-
-  displayPreview = (article, index) => {
-    return (
-      <article
-        key={index}
-      >
-        <ArticlePreview
-          id={index}
-          imageUrl={article.fields.thumbnail}
-          headline={article.webTitle}
-          url={article.webUrl}
-        />
-      </article>
-    )
   }
 
   render() {
@@ -38,7 +22,14 @@ export default class ArticleList extends Component {
         id='article-list'
       >
         {this.state.articles.map((article, index) => {
-          return this.displayPreview(article, index)
+          return (
+            <ArticlePreview
+              key={index}
+              imageUrl={article.fields.thumbnail}
+              headline={article.webTitle}
+              url={article.webUrl}
+            />
+          )
         })}
       </div>
     )

@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const ArticleImage = ({imageUrl}) => {
+const ArticleImage = ({ imageUrl }) => {
   return (
     <figure
       className='image-wrapper'
@@ -12,6 +13,10 @@ const ArticleImage = ({imageUrl}) => {
       />
     </figure>
   )
+}
+
+ArticleImage.propTypes = {
+  imageUrl: PropTypes.string.isRequired
 }
 
 export default ArticleImage

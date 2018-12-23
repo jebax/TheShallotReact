@@ -11,7 +11,9 @@ export default class ArticlePreview extends Component {
         <ArticleImage
           imageUrl={this.props.imageUrl}
         />
-        <Headline />
+        <Headline
+          headline={this.props.headline}
+        />
       </div>
     )
   }

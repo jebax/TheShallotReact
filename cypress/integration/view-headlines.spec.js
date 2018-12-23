@@ -1,5 +1,5 @@
 describe('Viewing headlines', () => {
-  beforeEach(() => {
+  before(() => {
     cy.server()
     cy.route(Cypress.env('guardianUrl'), {
       method: 'GET',
@@ -15,15 +15,15 @@ describe('Viewing headlines', () => {
         ]
       }
     })
+
+    cy.visit('http://localhost:3000')
   })
 
-  it.skip('shows the correct headline on the page', () => {
-    cy.get('[className="headline"]').first().contains('TestHeadline')
+  it('shows the correct headline on the page', () => {
+    cy.get('[class="headline"]').first().contains('TestHeadline')
   })
 
   it('shows the correct image on the page', () => {
-    cy.visit('http://localhost:3000')
-
     cy.get('[class="article-image"]').first()
       .should('have.attr', 'src')
       .should('include', 'TestThumbnailUrl')

@@ -6,7 +6,14 @@ describe('<ArticlePreview />', () => {
   var wrapper
 
   beforeAll(() => {
-    wrapper = shallow(<ArticlePreview />)
+    wrapper = shallow(
+      <ArticlePreview
+        key={0}
+        imageUrl={'TestThumbnailUrl'}
+        headline='TestHeadline'
+        url='TestUrl'
+      />
+    )
   })
 
   it('matches the snapshot', () => {

@@ -6,7 +6,7 @@ describe('<ArticleImage />', () => {
   var wrapper
 
   beforeAll(() => {
-    wrapper = shallow(<ArticleImage />)
+    wrapper = shallow(<ArticleImage imageUrl={'TestImage'} />)
   })
 
   it('matches the snapshot', () => {
@@ -22,8 +22,7 @@ describe('<ArticleImage />', () => {
   })
 
   it('renders its image based on its image url', () => {
-    const secondWrapper = shallow(<ArticleImage imageUrl={'TestImage'} />)
-    const image = secondWrapper.find('.article-image')
+    const image = wrapper.find('.article-image')
 
     expect(image.props().src).toEqual('TestImage')
   })
