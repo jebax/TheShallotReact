@@ -6,7 +6,10 @@ export default class ArticleImage extends Component {
       <figure
         className='image-wrapper'
       >
-        <img className='article-image' src={this.props.imageUrl} />
+        <img
+          className='article-image'
+          src={this.props.imageUrl}
+        />
       </figure>
     )
   }
