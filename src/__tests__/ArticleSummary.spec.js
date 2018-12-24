@@ -10,7 +10,13 @@ describe('<ArticleSummary />', () => {
   var wrapper
 
   beforeAll(() => {
-    axios.get.mockResolvedValue({})
+    let response = {
+      data: {
+        sentences: ['One', 'Two', 'Three', 'Four', 'Five']
+      }
+    }
+    axios.get.mockResolvedValue(response)
+
     const location = {
       state: {
         id: 0,
@@ -39,7 +45,16 @@ describe('<ArticleSummary />', () => {
   it('makes a request to the correct API with the related URL', () => {
     expect(axios.get).toHaveBeenCalledTimes(1)
     expect(axios.get).toHaveBeenCalledWith(`${config.aylienUrl}TestUrl`, {
-      headers: {}
+      headers: {
+        'X-AYLIEN-TextAPI-Application-Key': process.env.REACT_APP_AYLIEN_KEY,
+        'X-AYLIEN-TextAPI-Application-ID': process.env.REACT_APP_AYLIEN_ID
+      }
     })
+  })
+
+  it('renders the API response sentences', () => {
+    const summaryText = wrapper.find('.summary-text')
+
+    expect(summaryText.text()).toEqual('OneTwoThreeFourFive')
   })
 })

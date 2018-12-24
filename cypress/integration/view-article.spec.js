@@ -18,9 +18,7 @@ describe('Viewing an article', () => {
 
     cy.route(Cypress.env('aylienUrl'), {
       method: 'GET',
-      response: {
-        sentences: ['One', 'Two', 'Three', 'Four', 'Five']
-      }
+      sentences: ['One', 'Two', 'Three', 'Four', 'Five']
     })
 
     cy.visit('http://localhost:3000')
@@ -36,12 +34,8 @@ describe('Viewing an article', () => {
     cy.get('[class="summary-headline"]').contains('TestHeadline')
   })
 
-  it.skip('displays the summary of the article on the page', () => {
-    cy.get('[class="summary-text"]').contains('One')
-    cy.get('[class="summary-text"]').contains('Two')
-    cy.get('[class="summary-text"]').contains('Three')
-    cy.get('[class="summary-text"]').contains('Four')
-    cy.get('[class="summary-text"]').contains('Five')
+  it('displays the summary of the article on the page', () => {
+    cy.get('[class="summary-text"]').contains('OneTwoThreeFourFive')
   })
 
   it('links to the article by clicking on headline', () => {

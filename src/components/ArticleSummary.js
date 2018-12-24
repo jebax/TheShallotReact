@@ -15,19 +15,35 @@ export default class ArticleSummary extends Component {
       }
     })
     .then(response => {
+      console.log(response)
       this.setState(prevState => ({sentences: response.data.sentences}))
     })
   }
 
   render() {
     return (
-      <a
-        className='summary-headline'
-        href={this.props.location.state.url}
-      >
-        {this.props.location.state.headline}
-      </a>
-
+      <div>
+        <a
+          className='summary-headline'
+          href={this.props.location.state.url}
+        >
+          {this.props.location.state.headline}
+        </a>
+        <article
+          className='summary-text'
+        >
+        {this.state.sentences.map((sentence, index) => {
+          return (
+            <p
+              className='summary-sentence'
+              key={index}
+            >
+              {sentence}
+            </p>
+          )
+        })}
+        </article>
+      </div>
     )
   }
 }

@@ -27,13 +27,160 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "TestHeadline",
-      "className": "summary-headline",
-      "href": "TestUrl",
+      "children": Array [
+        <a
+          className="summary-headline"
+          href="TestUrl"
+        >
+          TestHeadline
+        </a>,
+        <article
+          className="summary-text"
+        >
+          <p
+            className="summary-sentence"
+          >
+            One
+          </p>
+          <p
+            className="summary-sentence"
+          >
+            Two
+          </p>
+          <p
+            className="summary-sentence"
+          >
+            Three
+          </p>
+          <p
+            className="summary-sentence"
+          >
+            Four
+          </p>
+          <p
+            className="summary-sentence"
+          >
+            Five
+          </p>
+        </article>,
+      ],
     },
     "ref": null,
-    "rendered": "TestHeadline",
-    "type": "a",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "TestHeadline",
+          "className": "summary-headline",
+          "href": "TestUrl",
+        },
+        "ref": null,
+        "rendered": "TestHeadline",
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="summary-sentence"
+            >
+              One
+            </p>,
+            <p
+              className="summary-sentence"
+            >
+              Two
+            </p>,
+            <p
+              className="summary-sentence"
+            >
+              Three
+            </p>,
+            <p
+              className="summary-sentence"
+            >
+              Four
+            </p>,
+            <p
+              className="summary-sentence"
+            >
+              Five
+            </p>,
+          ],
+          "className": "summary-text",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": "One",
+              "className": "summary-sentence",
+            },
+            "ref": null,
+            "rendered": "One",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Two",
+              "className": "summary-sentence",
+            },
+            "ref": null,
+            "rendered": "Two",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Three",
+              "className": "summary-sentence",
+            },
+            "ref": null,
+            "rendered": "Three",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Four",
+              "className": "summary-sentence",
+            },
+            "ref": null,
+            "rendered": "Four",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Five",
+              "className": "summary-sentence",
+            },
+            "ref": null,
+            "rendered": "Five",
+            "type": "p",
+          },
+        ],
+        "type": "article",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -41,13 +188,160 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "TestHeadline",
-        "className": "summary-headline",
-        "href": "TestUrl",
+        "children": Array [
+          <a
+            className="summary-headline"
+            href="TestUrl"
+          >
+            TestHeadline
+          </a>,
+          <article
+            className="summary-text"
+          >
+            <p
+              className="summary-sentence"
+            >
+              One
+            </p>
+            <p
+              className="summary-sentence"
+            >
+              Two
+            </p>
+            <p
+              className="summary-sentence"
+            >
+              Three
+            </p>
+            <p
+              className="summary-sentence"
+            >
+              Four
+            </p>
+            <p
+              className="summary-sentence"
+            >
+              Five
+            </p>
+          </article>,
+        ],
       },
       "ref": null,
-      "rendered": "TestHeadline",
-      "type": "a",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "TestHeadline",
+            "className": "summary-headline",
+            "href": "TestUrl",
+          },
+          "ref": null,
+          "rendered": "TestHeadline",
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="summary-sentence"
+              >
+                One
+              </p>,
+              <p
+                className="summary-sentence"
+              >
+                Two
+              </p>,
+              <p
+                className="summary-sentence"
+              >
+                Three
+              </p>,
+              <p
+                className="summary-sentence"
+              >
+                Four
+              </p>,
+              <p
+                className="summary-sentence"
+              >
+                Five
+              </p>,
+            ],
+            "className": "summary-text",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": "One",
+                "className": "summary-sentence",
+              },
+              "ref": null,
+              "rendered": "One",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Two",
+                "className": "summary-sentence",
+              },
+              "ref": null,
+              "rendered": "Two",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Three",
+                "className": "summary-sentence",
+              },
+              "ref": null,
+              "rendered": "Three",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Four",
+                "className": "summary-sentence",
+              },
+              "ref": null,
+              "rendered": "Four",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Five",
+                "className": "summary-sentence",
+              },
+              "ref": null,
+              "rendered": "Five",
+              "type": "p",
+            },
+          ],
+          "type": "article",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
