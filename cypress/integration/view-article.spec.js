@@ -7,12 +7,19 @@ describe('Viewing an article', () => {
         results: [
           {
             webTitle: 'TestHeadline',
-            webUrl: 'TestHeadline',
+            webUrl: 'http://localhost:3000/TestUrl',
             fields: {
               thumbnail: 'TestThumbnailUrl'
             }
           }
         ]
+      }
+    })
+
+    cy.route(Cypress.env('aylienUrl'), {
+      method: 'GET',
+      response: {
+        sentences: ['One', 'Two', 'Three', 'Four', 'Five']
       }
     })
 
@@ -25,7 +32,20 @@ describe('Viewing an article', () => {
     cy.url().should('include', 'articles/0')
   })
 
-  it.skip('lists the correct headline', () => {
+  it('lists the correct headline', () => {
     cy.get('[class="summary-headline"]').contains('TestHeadline')
+  })
+
+  it.skip('displays the summary of the article on the page', () => {
+    cy.get('[class="summary-text"]').contains('One')
+    cy.get('[class="summary-text"]').contains('Two')
+    cy.get('[class="summary-text"]').contains('Three')
+    cy.get('[class="summary-text"]').contains('Four')
+    cy.get('[class="summary-text"]').contains('Five')
+  })
+
+  it('links to the article by clicking on headline', () => {
+    cy.get('[class="summary-headline"]').click()
+    cy.url().should('eq', 'http://localhost:3000/TestUrl')
   })
 })

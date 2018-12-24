@@ -1,11 +1,16 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import axios from 'axios'
 import ArticleSummary from '../components/ArticleSummary'
+import { config } from '../config'
+
+jest.mock('axios')
 
 describe('<ArticleSummary />', () => {
   var wrapper
 
   beforeAll(() => {
+    axios.get.mockResolvedValue({})
     const location = {
       state: {
         id: 0,
@@ -29,5 +34,12 @@ describe('<ArticleSummary />', () => {
 
     expect(link.text()).toEqual('TestHeadline')
     expect(link.props().href).toEqual('TestUrl')
+  })
+
+  it('makes a request to the correct API with the related URL', () => {
+    expect(axios.get).toHaveBeenCalledTimes(1)
+    expect(axios.get).toHaveBeenCalledWith(`${config.aylienUrl}TestUrl`, {
+      headers: {}
+    })
   })
 })
