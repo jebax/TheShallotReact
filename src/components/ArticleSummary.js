@@ -15,9 +15,31 @@ export default class ArticleSummary extends Component {
       }
     })
     .then(response => {
-      console.log(response)
       this.setState(prevState => ({sentences: response.data.sentences}))
     })
+  }
+
+  loadSummaryBody = () => {
+    if (this.state.sentences.length === 0) {
+      return (
+        <span
+          className='loading-text'
+        >
+          Loading summary...
+        </span>
+      )
+    } else {
+      return this.state.sentences.map((sentence, index) => {
+        return (
+          <p
+            className='summary-sentence'
+            key={index}
+          >
+            {sentence}
+          </p>
+        )
+      })
+    }
   }
 
   render() {
@@ -32,16 +54,7 @@ export default class ArticleSummary extends Component {
         <article
           className='summary-text'
         >
-        {this.state.sentences.map((sentence, index) => {
-          return (
-            <p
-              className='summary-sentence'
-              key={index}
-            >
-              {sentence}
-            </p>
-          )
-        })}
+          {this.loadSummaryBody()}
         </article>
       </div>
     )

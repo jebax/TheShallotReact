@@ -8,6 +8,7 @@ jest.mock('axios')
 
 describe('<ArticleSummary />', () => {
   var wrapper
+  var location
 
   beforeAll(() => {
     let response = {
@@ -17,7 +18,7 @@ describe('<ArticleSummary />', () => {
     }
     axios.get.mockResolvedValue(response)
 
-    const location = {
+    location = {
       state: {
         id: 0,
         headline: 'TestHeadline',
@@ -56,5 +57,19 @@ describe('<ArticleSummary />', () => {
     const summaryText = wrapper.find('.summary-text')
 
     expect(summaryText.text()).toEqual('OneTwoThreeFourFive')
+  })
+
+  it('displays a "loading" message if there are no sentences loaded', () => {
+    let response = {
+      data: {
+        sentences: []
+      }
+    }
+    axios.get.mockResolvedValue(response)
+
+    const secondWrapper = shallow(<ArticleSummary location={location}/>)
+    const summaryText = secondWrapper.find('.summary-text')
+
+    expect(summaryText.text()).toEqual('Loading summary...')
   })
 })
