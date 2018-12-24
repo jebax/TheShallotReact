@@ -8,6 +8,7 @@ const Headline = ({ id, headline, url }) => {
       <Link
         to={{
           pathname: `articles/${id}`,
+          state: { headline: headline, id: id, url: url }
         }}
         className='headline'
       >

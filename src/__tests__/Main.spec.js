@@ -18,7 +18,7 @@ describe('<Main />', () => {
     expect(wrapper.find('main').length).toEqual(1)
   })
 
-  it('renders a Route', () => {
-    expect(wrapper.find('Route').length).toEqual(1)
+  it('renders two Routes', () => {
+    expect(wrapper.find('Route').length).toEqual(2)
   })
 })

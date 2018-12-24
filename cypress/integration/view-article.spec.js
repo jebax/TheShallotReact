@@ -24,4 +24,8 @@ describe('Viewing an article', () => {
 
     cy.url().should('include', 'articles/0')
   })
+
+  it.skip('lists the correct headline', () => {
+    cy.get('[class="summary-headline"]').contains('TestHeadline')
+  })
 })
