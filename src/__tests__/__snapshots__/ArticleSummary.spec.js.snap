@@ -28,12 +28,10 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <a
-          className="summary-headline"
-          href="TestUrl"
-        >
-          TestHeadline
-        </a>,
+        <SummaryHeadline
+          headline="TestHeadline"
+          url="TestUrl"
+        />,
         <article
           className="summary-text"
         >
@@ -70,15 +68,14 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "function",
         "props": Object {
-          "children": "TestHeadline",
-          "className": "summary-headline",
-          "href": "TestUrl",
+          "headline": "TestHeadline",
+          "url": "TestUrl",
         },
         "ref": null,
-        "rendered": "TestHeadline",
-        "type": "a",
+        "rendered": null,
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -189,12 +186,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <a
-            className="summary-headline"
-            href="TestUrl"
-          >
-            TestHeadline
-          </a>,
+          <SummaryHeadline
+            headline="TestHeadline"
+            url="TestUrl"
+          />,
           <article
             className="summary-text"
           >
@@ -231,15 +226,14 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "function",
           "props": Object {
-            "children": "TestHeadline",
-            "className": "summary-headline",
-            "href": "TestUrl",
+            "headline": "TestHeadline",
+            "url": "TestUrl",
           },
           "ref": null,
-          "rendered": "TestHeadline",
-          "type": "a",
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,

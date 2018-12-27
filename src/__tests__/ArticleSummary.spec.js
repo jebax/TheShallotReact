@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import axios from 'axios'
 import ArticleSummary from '../components/ArticleSummary'
 import { config } from '../config'
@@ -33,14 +33,7 @@ describe('<ArticleSummary />', () => {
   })
 
   it('has a link to an article', () => {
-    expect(wrapper.find('a').length).toEqual(1)
-  })
-
-  it('has a link based on its state', () => {
-    const link = wrapper.find('a')
-
-    expect(link.text()).toEqual('TestHeadline')
-    expect(link.props().href).toEqual('TestUrl')
+    expect(wrapper.find('SummaryHeadline').length).toEqual(1)
   })
 
   it('makes a request to the correct API with the related URL', () => {
@@ -57,6 +50,14 @@ describe('<ArticleSummary />', () => {
     const summaryText = wrapper.find('.summary-text')
 
     expect(summaryText.text()).toEqual('OneTwoThreeFourFive')
+  })
+
+  it('has a summary headline based on its state', () => {
+    const secondWrapper = mount(<ArticleSummary location={location} />)
+    const link = secondWrapper.find('SummaryHeadline')
+
+    expect(link.text()).toEqual('TestHeadline')
+    expect(link.props().url).toEqual('TestUrl')
   })
 
   it('displays a "loading" message if there are no sentences loaded', () => {

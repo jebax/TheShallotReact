@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { config } from '../config'
+import PropTypes from 'prop-types'
+import SummaryHeadline from './SummaryHeadline'
 
 export default class ArticleSummary extends Component {
   state = {
@@ -45,12 +47,10 @@ export default class ArticleSummary extends Component {
   render() {
     return (
       <div>
-        <a
-          className='summary-headline'
-          href={this.props.location.state.url}
-        >
-          {this.props.location.state.headline}
-        </a>
+        <SummaryHeadline
+          headline={this.props.location.state.headline}
+          url={this.props.location.state.url}
+        />
         <article
           className='summary-text'
         >
@@ -59,4 +59,8 @@ export default class ArticleSummary extends Component {
       </div>
     )
   }
+}
+
+ArticleSummary.propTypes = {
+  location: PropTypes.object.isRequired
 }
