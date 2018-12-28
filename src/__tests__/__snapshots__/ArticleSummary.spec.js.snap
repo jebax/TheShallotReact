@@ -32,35 +32,17 @@ ShallowWrapper {
           headline="TestHeadline"
           url="TestUrl"
         />,
-        <article
-          className="summary-text"
-        >
-          <p
-            className="summary-sentence"
-          >
-            One
-          </p>
-          <p
-            className="summary-sentence"
-          >
-            Two
-          </p>
-          <p
-            className="summary-sentence"
-          >
-            Three
-          </p>
-          <p
-            className="summary-sentence"
-          >
-            Four
-          </p>
-          <p
-            className="summary-sentence"
-          >
-            Five
-          </p>
-        </article>,
+        <SummaryText
+          sentences={
+            Array [
+              "One",
+              "Two",
+              "Three",
+              "Four",
+              "Five",
+            ]
+          }
+        />,
       ],
     },
     "ref": null,
@@ -80,101 +62,19 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <p
-              className="summary-sentence"
-            >
-              One
-            </p>,
-            <p
-              className="summary-sentence"
-            >
-              Two
-            </p>,
-            <p
-              className="summary-sentence"
-            >
-              Three
-            </p>,
-            <p
-              className="summary-sentence"
-            >
-              Four
-            </p>,
-            <p
-              className="summary-sentence"
-            >
-              Five
-            </p>,
+          "sentences": Array [
+            "One",
+            "Two",
+            "Three",
+            "Four",
+            "Five",
           ],
-          "className": "summary-text",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": "0",
-            "nodeType": "host",
-            "props": Object {
-              "children": "One",
-              "className": "summary-sentence",
-            },
-            "ref": null,
-            "rendered": "One",
-            "type": "p",
-          },
-          Object {
-            "instance": null,
-            "key": "1",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Two",
-              "className": "summary-sentence",
-            },
-            "ref": null,
-            "rendered": "Two",
-            "type": "p",
-          },
-          Object {
-            "instance": null,
-            "key": "2",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Three",
-              "className": "summary-sentence",
-            },
-            "ref": null,
-            "rendered": "Three",
-            "type": "p",
-          },
-          Object {
-            "instance": null,
-            "key": "3",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Four",
-              "className": "summary-sentence",
-            },
-            "ref": null,
-            "rendered": "Four",
-            "type": "p",
-          },
-          Object {
-            "instance": null,
-            "key": "4",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Five",
-              "className": "summary-sentence",
-            },
-            "ref": null,
-            "rendered": "Five",
-            "type": "p",
-          },
-        ],
-        "type": "article",
+        "rendered": null,
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -190,35 +90,17 @@ ShallowWrapper {
             headline="TestHeadline"
             url="TestUrl"
           />,
-          <article
-            className="summary-text"
-          >
-            <p
-              className="summary-sentence"
-            >
-              One
-            </p>
-            <p
-              className="summary-sentence"
-            >
-              Two
-            </p>
-            <p
-              className="summary-sentence"
-            >
-              Three
-            </p>
-            <p
-              className="summary-sentence"
-            >
-              Four
-            </p>
-            <p
-              className="summary-sentence"
-            >
-              Five
-            </p>
-          </article>,
+          <SummaryText
+            sentences={
+              Array [
+                "One",
+                "Two",
+                "Three",
+                "Four",
+                "Five",
+              ]
+            }
+          />,
         ],
       },
       "ref": null,
@@ -238,101 +120,19 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <p
-                className="summary-sentence"
-              >
-                One
-              </p>,
-              <p
-                className="summary-sentence"
-              >
-                Two
-              </p>,
-              <p
-                className="summary-sentence"
-              >
-                Three
-              </p>,
-              <p
-                className="summary-sentence"
-              >
-                Four
-              </p>,
-              <p
-                className="summary-sentence"
-              >
-                Five
-              </p>,
+            "sentences": Array [
+              "One",
+              "Two",
+              "Three",
+              "Four",
+              "Five",
             ],
-            "className": "summary-text",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "0",
-              "nodeType": "host",
-              "props": Object {
-                "children": "One",
-                "className": "summary-sentence",
-              },
-              "ref": null,
-              "rendered": "One",
-              "type": "p",
-            },
-            Object {
-              "instance": null,
-              "key": "1",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Two",
-                "className": "summary-sentence",
-              },
-              "ref": null,
-              "rendered": "Two",
-              "type": "p",
-            },
-            Object {
-              "instance": null,
-              "key": "2",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Three",
-                "className": "summary-sentence",
-              },
-              "ref": null,
-              "rendered": "Three",
-              "type": "p",
-            },
-            Object {
-              "instance": null,
-              "key": "3",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Four",
-                "className": "summary-sentence",
-              },
-              "ref": null,
-              "rendered": "Four",
-              "type": "p",
-            },
-            Object {
-              "instance": null,
-              "key": "4",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Five",
-                "className": "summary-sentence",
-              },
-              "ref": null,
-              "rendered": "Five",
-              "type": "p",
-            },
-          ],
-          "type": "article",
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",

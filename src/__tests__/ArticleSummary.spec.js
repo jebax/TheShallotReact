@@ -5,13 +5,15 @@ import ArticleSummary from '../components/ArticleSummary'
 import { config } from '../config'
 
 jest.mock('axios')
+jest.useFakeTimers()
 
 describe('<ArticleSummary />', () => {
   var wrapper
   var location
+  var response
 
   beforeAll(() => {
-    let response = {
+    response = {
       data: {
         sentences: ['One', 'Two', 'Three', 'Four', 'Five']
       }
@@ -46,10 +48,8 @@ describe('<ArticleSummary />', () => {
     })
   })
 
-  it('renders the API response sentences', () => {
-    const summaryText = wrapper.find('.summary-text')
-
-    expect(summaryText.text()).toEqual('OneTwoThreeFourFive')
+  it('renders the SummaryText', () => {
+    expect(wrapper.find('SummaryText').length).toEqual(1)
   })
 
   it('has a summary headline based on its state', () => {
@@ -61,14 +61,14 @@ describe('<ArticleSummary />', () => {
   })
 
   it('displays a "loading" message if there are no sentences loaded', () => {
-    let response = {
+    let emptyResponse = {
       data: {
         sentences: []
       }
     }
-    axios.get.mockResolvedValue(response)
+    axios.get.mockResolvedValue(emptyResponse)
 
-    const secondWrapper = shallow(<ArticleSummary location={location}/>)
+    const secondWrapper = mount(<ArticleSummary location={location}/>)
     const summaryText = secondWrapper.find('.summary-text')
 
     expect(summaryText.text()).toEqual('Loading summary...')
