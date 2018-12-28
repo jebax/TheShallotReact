@@ -13,6 +13,10 @@ describe('<ArticlesPage />', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('displays the title', () => {
+    expect(wrapper.find('Title').length).toEqual(1)
+  })
+
   it('loads the ArticleList', () => {
     expect(wrapper.find('ArticleList').length).toEqual(1)
   })
