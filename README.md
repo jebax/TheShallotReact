@@ -1,4 +1,4 @@
-# The Shallot in React [![Build Status](https://travis-ci.org/jebax/TheShallotReact.svg?branch=master)](https://travis-ci.org/jebax/TheShallotReact)
+# The Shallot in React [![Build Status](https://travis-ci.org/jebax/TheShallotReact.svg?branch=master)](https://travis-ci.org/jebax/TheShallotReact) [![Maintainability](https://api.codeclimate.com/v1/badges/64da5abffe3c3bcbeb2a/maintainability)](https://codeclimate.com/github/jebax/TheShallotReact/maintainability)
 *The Shallot* is a single-page news summary app, using the [Guardian API](https://open-platform.theguardian.com/documentation/) to fetch tech news headlines and thumbnails. Clicking on a headline will display a short summary of the article (using the [Aylien Summarization API](https://aylien.com/text-api/summarization/)), and then clicking on the headline again will link the user to the original article.
 
 This is a React re-imagining of [this](https://github.com/jebax/TheShallotSummary) pure JS project. After learning how amazing React is for creating single-page apps, I decided I had to give this a go!
@@ -11,6 +11,7 @@ I used a test-driven approach for this project, with Jest, Enzyme, and Cypress a
 - `npm install` inside the project directory
 - `npm start` to run a development build on `http://localhost:3000/`
 - `npm test` to run unit tests (Jest / Enzyme)
+- `npm test -- --coverage` to view unit test coverage
 - `npx cypress open` to run integration tests (Cypress)
 
 This project requires a [Guardian API key](https://open-platform.theguardian.com/access/), an [Aylien Summarization API key](https://aylien.com/text-api/summarization/) (and the related app ID), and local environment files for the React app and the Cypress tests.
