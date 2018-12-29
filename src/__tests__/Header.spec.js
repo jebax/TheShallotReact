@@ -16,4 +16,8 @@ describe('<App />', () => {
   it('renders a header', () => {
     expect(wrapper.find('header').length).toEqual(1)
   })
+
+  it('renders the Title', () => {
+    expect(wrapper.find('Title').length).toEqual(1)
+  })
 })

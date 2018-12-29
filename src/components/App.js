@@ -1,13 +1,22 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './Header'
-import Main from './Main'
+import ArticleList from './ArticleList'
+import ArticleSummary from './ArticleSummary'
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Main />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <main>
+          <Switch>
+            <Route exact path='/' component={ArticleList} />
+            <Route exact path='/articles/:id' component={ArticleSummary} />
+          </Switch>
+        </main>
+      </div>
+    </Router>
   )
 }
 
