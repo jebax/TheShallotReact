@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class SummaryText extends Component {
-  loadSummaryBody = () => {
-    if (this.props.sentences.length === 0) {
+const SummaryText = ({ sentences }) => {
+  const loadSummaryBody= (() => {
+    if (sentences.length === 0) {
       return (
         <span
           className='loading-text'
@@ -12,7 +12,7 @@ export default class SummaryText extends Component {
         </span>
       )
     } else {
-      return this.props.sentences.map((sentence, index) => {
+      return sentences.map((sentence, index) => {
         return (
           <p
             className='summary-sentence'
@@ -23,19 +23,19 @@ export default class SummaryText extends Component {
         )
       })
     }
-  }
+  })()
 
-  render() {
-    return (
-      <article
-        className='summary-text'
-      >
-        {this.loadSummaryBody()}
-      </article>
-    )
-  }
+  return (
+    <article
+      className='summary-text'
+    >
+      {loadSummaryBody}
+    </article>
+  )
 }
 
 SummaryText.propTypes = {
   sentences: PropTypes.array.isRequired
 }
+
+export default SummaryText

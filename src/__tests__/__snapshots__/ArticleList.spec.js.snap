@@ -44,7 +44,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "0",
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
           "headline": "Title1",
           "id": 0,
@@ -58,7 +58,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "1",
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
           "headline": "Title2",
           "id": 1,
@@ -72,7 +72,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "2",
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
           "headline": "Title3",
           "id": 2,
@@ -119,7 +119,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "0",
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
             "headline": "Title1",
             "id": 0,
@@ -133,7 +133,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "1",
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
             "headline": "Title2",
             "id": 1,
@@ -147,7 +147,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "2",
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
             "headline": "Title3",
             "id": 2,
