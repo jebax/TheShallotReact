@@ -1,4 +1,4 @@
-# The Shallot in React
+# The Shallot in React [![Build Status](https://travis-ci.org/jebax/TheShallotReact.svg?branch=master)](https://travis-ci.org/jebax/TheShallotReact)
 *The Shallot* is a single-page news summary app, using the [Guardian API](https://open-platform.theguardian.com/documentation/) to fetch tech news headlines and thumbnails. Clicking on a headline will display a short summary of the article (using the [Aylien Summarization API](https://aylien.com/text-api/summarization/)), and then clicking on the headline again will link the user to the original article.
 
 This is a React re-imagining of [this](https://github.com/jebax/TheShallotSummary) pure JS project. After learning how amazing React is for creating single-page apps, I decided I had to give this a go!
