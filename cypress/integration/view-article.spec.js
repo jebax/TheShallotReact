@@ -1,5 +1,5 @@
 describe('Viewing an article', () => {
-  before(() => {
+  beforeEach(() => {
     cy.server()
     cy.route(Cypress.env('guardianUrl'), {
       method: 'GET',
@@ -20,17 +20,22 @@ describe('Viewing an article', () => {
       method: 'GET',
       sentences: ['One', 'Two', 'Three', 'Four', 'Five']
     })
-
-    cy.visit('http://localhost:3000')
   })
 
   it('has the correct URL', () => {
+    cy.visit('http://localhost:3000/')
     cy.get('[class="headline"]').first().click()
 
     cy.url().should('include', 'articles/0')
   })
 
+  it('links back to the article list by clicking on the app title', () => {
+    cy.get('[id="shallot-title"]').click()
+    cy.url().should('eq', 'http://localhost:3000/')
+  })
+
   it('lists the correct headline', () => {
+    cy.get('[class="headline"]').first().click()
     cy.get('[class="summary-headline"]').contains('TestHeadline')
   })
 
