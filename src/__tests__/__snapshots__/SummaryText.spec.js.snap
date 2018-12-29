@@ -29,32 +29,32 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <p
-          className="summary-sentence"
+          className="summarySentence"
         >
           One
         </p>,
         <p
-          className="summary-sentence"
+          className="summarySentence"
         >
           Two
         </p>,
         <p
-          className="summary-sentence"
+          className="summarySentence"
         >
           Three
         </p>,
         <p
-          className="summary-sentence"
+          className="summarySentence"
         >
           Four
         </p>,
         <p
-          className="summary-sentence"
+          className="summarySentence"
         >
           Five
         </p>,
       ],
-      "className": "summary-text",
+      "className": "summaryText",
     },
     "ref": null,
     "rendered": Array [
@@ -64,7 +64,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "One",
-          "className": "summary-sentence",
+          "className": "summarySentence",
         },
         "ref": null,
         "rendered": "One",
@@ -76,7 +76,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Two",
-          "className": "summary-sentence",
+          "className": "summarySentence",
         },
         "ref": null,
         "rendered": "Two",
@@ -88,7 +88,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Three",
-          "className": "summary-sentence",
+          "className": "summarySentence",
         },
         "ref": null,
         "rendered": "Three",
@@ -100,7 +100,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Four",
-          "className": "summary-sentence",
+          "className": "summarySentence",
         },
         "ref": null,
         "rendered": "Four",
@@ -112,7 +112,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Five",
-          "className": "summary-sentence",
+          "className": "summarySentence",
         },
         "ref": null,
         "rendered": "Five",
@@ -129,32 +129,32 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <p
-            className="summary-sentence"
+            className="summarySentence"
           >
             One
           </p>,
           <p
-            className="summary-sentence"
+            className="summarySentence"
           >
             Two
           </p>,
           <p
-            className="summary-sentence"
+            className="summarySentence"
           >
             Three
           </p>,
           <p
-            className="summary-sentence"
+            className="summarySentence"
           >
             Four
           </p>,
           <p
-            className="summary-sentence"
+            className="summarySentence"
           >
             Five
           </p>,
         ],
-        "className": "summary-text",
+        "className": "summaryText",
       },
       "ref": null,
       "rendered": Array [
@@ -164,7 +164,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "One",
-            "className": "summary-sentence",
+            "className": "summarySentence",
           },
           "ref": null,
           "rendered": "One",
@@ -176,7 +176,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Two",
-            "className": "summary-sentence",
+            "className": "summarySentence",
           },
           "ref": null,
           "rendered": "Two",
@@ -188,7 +188,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Three",
-            "className": "summary-sentence",
+            "className": "summarySentence",
           },
           "ref": null,
           "rendered": "Three",
@@ -200,7 +200,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Four",
-            "className": "summary-sentence",
+            "className": "summarySentence",
           },
           "ref": null,
           "rendered": "Four",
@@ -212,7 +212,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Five",
-            "className": "summary-sentence",
+            "className": "summarySentence",
           },
           "ref": null,
           "rendered": "Five",

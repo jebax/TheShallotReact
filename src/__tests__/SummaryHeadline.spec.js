@@ -14,7 +14,7 @@ describe('<SummaryHeadline />', () => {
       />
     )
 
-    headline = wrapper.find('.summary-headline')
+    headline = wrapper.find('.summaryHeadline')
   })
 
   it('matches the snapshot', () => {

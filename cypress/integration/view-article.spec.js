@@ -30,21 +30,21 @@ describe('Viewing an article', () => {
   })
 
   it('links back to the article list by clicking on the app title', () => {
-    cy.get('[id="shallot-title"]').click()
+    cy.get('[id="shallotTitle"]').click()
     cy.url().should('eq', 'http://localhost:3000/')
   })
 
   it('lists the correct headline', () => {
     cy.get('[class="headline"]').first().click()
-    cy.get('[class="summary-headline"]').contains('TestHeadline')
+    cy.get('[class="summaryHeadline"]').contains('TestHeadline')
   })
 
   it('displays the summary of the article on the page', () => {
-    cy.get('[class="summary-text"]').contains('OneTwoThreeFourFive')
+    cy.get('[class="summaryText"]').contains('OneTwoThreeFourFive')
   })
 
   it('links to the article by clicking on headline', () => {
-    cy.get('[class="summary-headline"]').click()
+    cy.get('[class="summaryHeadline"]').click()
     cy.url().should('eq', 'http://localhost:3000/TestUrl')
   })
 })

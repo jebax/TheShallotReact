@@ -15,7 +15,7 @@ describe('<Title />', () => {
 
   it('has a link to the home page in the title', () => {
     const link = wrapper.find('Link')
-    expect(link.props().id).toEqual('shallot-title')
+    expect(link.props().id).toEqual('shallotTitle')
     expect(link.props().to).toEqual({ pathname: '/' })
   })
 })

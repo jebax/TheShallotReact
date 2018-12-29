@@ -37,7 +37,7 @@ ShallowWrapper {
           url="Url3"
         />,
       ],
-      "id": "article-list",
+      "id": "articleList",
     },
     "ref": null,
     "rendered": Array [
@@ -112,7 +112,7 @@ ShallowWrapper {
             url="Url3"
           />,
         ],
-        "id": "article-list",
+        "id": "articleList",
       },
       "ref": null,
       "rendered": Array [

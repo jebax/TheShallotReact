@@ -32,7 +32,7 @@ ShallowWrapper {
           url="TestUrl"
         />,
       ],
-      "className": "article-preview",
+      "className": "articlePreview",
     },
     "ref": null,
     "rendered": Array [
@@ -79,7 +79,7 @@ ShallowWrapper {
             url="TestUrl"
           />,
         ],
-        "className": "article-preview",
+        "className": "articlePreview",
       },
       "ref": null,
       "rendered": Array [

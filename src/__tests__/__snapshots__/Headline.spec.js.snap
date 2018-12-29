@@ -37,7 +37,7 @@ ShallowWrapper {
       >
         TestHeadline
       </Link>,
-      "className": "headline-wrapper",
+      "className": "headlineWrapper",
     },
     "ref": null,
     "rendered": Object {
@@ -85,7 +85,7 @@ ShallowWrapper {
         >
           TestHeadline
         </Link>,
-        "className": "headline-wrapper",
+        "className": "headlineWrapper",
       },
       "ref": null,
       "rendered": Object {

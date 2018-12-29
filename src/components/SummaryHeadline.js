@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const SummaryHeadline = ({ headline, url }) => {
   return (
     <a
-      className='summary-headline'
+      className='summaryHeadline'
       href={url}
     >
       {headline}

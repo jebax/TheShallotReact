@@ -5,7 +5,7 @@ const Title = () => {
   return (
     <Link
       to={{ pathname: '/' }}
-      id='shallot-title'
+      id='shallotTitle'
     >
       The Shallot
     </Link>

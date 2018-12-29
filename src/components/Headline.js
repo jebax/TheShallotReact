@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Headline = ({ id, headline, url }) => {
   return (
-    <span className='headline-wrapper'>
+    <span className='headlineWrapper'>
       <Link
         to={{
           pathname: `articles/${id}`,

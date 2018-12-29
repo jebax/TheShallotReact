@@ -24,7 +24,7 @@ describe('Viewing headlines', () => {
   })
 
   it('shows the correct image on the page', () => {
-    cy.get('[class="article-image"]').first()
+    cy.get('[class="articleImage"]').first()
       .should('have.attr', 'src')
       .should('include', 'TestThumbnailUrl')
   })

@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 const SummaryText = ({ sentences }) => {
-  const loadSummaryBody= (() => {
+  const summaryBody= (() => {
     if (sentences.length === 0) {
       return (
         <span
-          className='loading-text'
+          className='loadingText'
         >
           Loading summary...
         </span>
@@ -15,7 +15,7 @@ const SummaryText = ({ sentences }) => {
       return sentences.map((sentence, index) => {
         return (
           <p
-            className='summary-sentence'
+            className='summarySentence'
             key={index}
           >
             {sentence}
@@ -27,9 +27,9 @@ const SummaryText = ({ sentences }) => {
 
   return (
     <article
-      className='summary-text'
+      className='summaryText'
     >
-      {loadSummaryBody}
+      {summaryBody}
     </article>
   )
 }

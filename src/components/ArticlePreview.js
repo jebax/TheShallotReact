@@ -6,7 +6,7 @@ import Headline from './Headline'
 const ArticlePreview = ({ id, imageUrl, headline, url }) => {
   return(
     <div
-      className='article-preview'
+      className='articlePreview'
     >
       <ArticleImage
         imageUrl={imageUrl}

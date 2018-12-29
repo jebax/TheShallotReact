@@ -4,11 +4,11 @@ import PropTypes from 'prop-types'
 const ArticleImage = ({ imageUrl }) => {
   return (
     <figure
-      className='image-wrapper'
+      className='imageWrapper'
     >
       <img
         alt=''
-        className='article-image'
+        className='articleImage'
         src={imageUrl}
       />
     </figure>

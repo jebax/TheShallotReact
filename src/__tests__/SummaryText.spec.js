@@ -18,14 +18,14 @@ describe('<SummaryText />', () => {
   })
 
   it('renders each sentence', () => {
-    const summaryText = wrapper.find('.summary-text')
+    const summaryText = wrapper.find('.summaryText')
 
     expect(summaryText.text()).toEqual('OneTwoThreeFourFive')
   })
 
   it('displays a "loading" message if there are no sentences loaded', () => {
     const secondWrapper = shallow(<SummaryText sentences={[]}/>)
-    const summaryText = secondWrapper.find('.summary-text')
+    const summaryText = secondWrapper.find('.summaryText')
 
     expect(summaryText.text()).toEqual('Loading summary...')
   })

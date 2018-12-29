@@ -19,7 +19,7 @@ export default class ArticleList extends Component {
   render() {
     return (
       <div
-        id='article-list'
+        id='articleList'
       >
         {this.state.articles.map((article, index) => {
           return (

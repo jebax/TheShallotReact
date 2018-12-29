@@ -14,15 +14,15 @@ describe('<ArticleImage />', () => {
   })
 
   it('renders an image wrapper', () => {
-    expect(wrapper.find('.image-wrapper').length).toEqual(1)
+    expect(wrapper.find('.imageWrapper').length).toEqual(1)
   })
 
   it('renders an image', () => {
-    expect(wrapper.find('.article-image').length).toEqual(1)
+    expect(wrapper.find('.articleImage').length).toEqual(1)
   })
 
   it('renders its image based on its image url', () => {
-    const image = wrapper.find('.article-image')
+    const image = wrapper.find('.articleImage')
 
     expect(image.props().src).toEqual('TestImage')
   })

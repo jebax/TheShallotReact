@@ -19,7 +19,7 @@ describe('<Headline />', () => {
   })
 
   it('renders a headline wrapper', () => {
-    expect(wrapper.find('.headline-wrapper').length).toEqual(1)
+    expect(wrapper.find('.headlineWrapper').length).toEqual(1)
   })
 
   it('renders a headline', () => {

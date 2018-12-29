@@ -33,7 +33,7 @@ describe('<ArticleSummary />', () => {
   it('matches the snapshot', () => {
     expect(wrapper).toMatchSnapshot()
   })
-  
+
   it('has a link to an article', () => {
     expect(wrapper.find('SummaryHeadline').length).toEqual(1)
   })
@@ -69,7 +69,7 @@ describe('<ArticleSummary />', () => {
     axios.get.mockResolvedValue(emptyResponse)
 
     const secondWrapper = mount(<ArticleSummary location={location}/>)
-    const summaryText = secondWrapper.find('.summary-text')
+    const summaryText = secondWrapper.find('.summaryText')
 
     expect(summaryText.text()).toEqual('Loading summary...')
   })

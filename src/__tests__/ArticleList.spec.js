@@ -27,7 +27,7 @@ describe('<ArticleList />', () => {
   })
 
   it('renders the article list wrapper', () => {
-    expect(wrapper.find('#article-list').length).toEqual(1)
+    expect(wrapper.find('#articleList').length).toEqual(1)
   })
 
   it('fetches information from the correct API url when mounted', () => {
