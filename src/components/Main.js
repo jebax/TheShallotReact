@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
-import ArticlesPage from './ArticlesPage'
+import ArticleList from './ArticleList'
 import ArticleSummary from './ArticleSummary'
+import Title from './Title'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 export default class Main extends Component {
   render() {
     return (
-      <main>
-        <Router>
+      <Router>
+        <main>
+          <Title />
           <Switch>
-            <Route exact path='/' component={ArticlesPage} />
-            <Route path='/articles' component={ArticleSummary} />
+            <Route exact path='/' component={ArticleList} />
+            <Route exact path='/articles/:id' component={ArticleSummary} />
           </Switch>
-        </Router>
-      </main>
+        </main>
+      </Router>
     )
   }
 }

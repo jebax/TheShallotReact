@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Title = () => {
   return (
     <Link
-      to={{ pathname: '' }}
+      to={{ pathname: '/' }}
       id='shallot-title'
     >
       The Shallot

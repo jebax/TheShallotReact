@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { config } from '../config'
 import PropTypes from 'prop-types'
+import Title from './Title'
 import SummaryHeadline from './SummaryHeadline'
 import SummaryText from './SummaryText'
 

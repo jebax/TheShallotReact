@@ -14,6 +14,10 @@ describe('<Main />', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('renders the Title', () => {
+    expect(wrapper.find('Title').length).toEqual(1)
+  })
+
   it('renders the main element', () => {
     expect(wrapper.find('main').length).toEqual(1)
   })

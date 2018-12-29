@@ -21,7 +21,7 @@ ShallowWrapper {
       "id": "shallot-title",
       "replace": false,
       "to": Object {
-        "pathname": "",
+        "pathname": "/",
       },
     },
     "ref": null,
@@ -38,7 +38,7 @@ ShallowWrapper {
         "id": "shallot-title",
         "replace": false,
         "to": Object {
-          "pathname": "",
+          "pathname": "/",
         },
       },
       "ref": null,

@@ -33,7 +33,7 @@ describe('<ArticleSummary />', () => {
   it('matches the snapshot', () => {
     expect(wrapper).toMatchSnapshot()
   })
-
+  
   it('has a link to an article', () => {
     expect(wrapper.find('SummaryHeadline').length).toEqual(1)
   })
