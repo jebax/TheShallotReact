@@ -1,3 +1,14 @@
 a#shallotTitle {
   font-family: 'Fredoka One', cursive;
+  font-size: 3.3vw;
+  text-decoration: none;
+  color: #491D2C;
+}
+
+a#shallotTitle:hover {
+  color: #E9CAD0;
+}
+
+a#shallotTitle:visited {
+  color: #491D2C;
 }
