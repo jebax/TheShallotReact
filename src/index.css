@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Roboto');
+
 a#shallotTitle {
   font-family: 'Fredoka One', cursive;
   font-size: 3.3vw;
@@ -11,4 +13,9 @@ a#shallotTitle:hover {
 
 a#shallotTitle:visited {
   color: #491D2C;
+}
+
+header {
+  text-align: center;
+  margin-top: 5vw;
 }
