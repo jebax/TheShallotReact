@@ -7,7 +7,23 @@
   }
 
   .headline {
+    font-size: 4vw !important;
     width: 72% !important;
+  }
+
+  .summaryHeadline {
+    font-size: 4vw !important;
+    width: 72% !important;
+  }
+
+  .summaryText {
+    font-size: 3vw !important;
+    margin-left: 12vw !important;
+    margin-right: 12vw !important;
+  }
+
+  a#shallotTitle {
+    font-size: 8vw !important;
   }
 }
 
@@ -28,6 +44,11 @@ a:visited {
 
 a:visited:hover {
   color: #E9CAD0;
+}
+
+body {
+  background-color: #F3EBE4;
+  background-image: url('background-texture.png');
 }
 
 header {
