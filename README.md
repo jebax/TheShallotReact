@@ -18,7 +18,7 @@ This project requires a [Guardian API key](https://open-platform.theguardian.com
 
 To set up local environment files, add the following in the project's root directory:
 
-#### `.env.development.local`, `.env.test.local`, `.env.production.local`
+#### `.env.development.local`, `.env.test.local`
 
 ```
 REACT_APP_GUARDIAN_KEY=yourkeygoeshere
