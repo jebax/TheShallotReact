@@ -4,7 +4,7 @@
 This is a React re-imagining of [this](https://github.com/jebax/TheShallotSummary) pure JS project. After learning how amazing React is for creating single-page apps, I decided I had to give this a go!
 
 ## My approach
-I used a test-driven approach for this project, with Jest, Enzyme, and Cypress as my testing technologies. This is also my first project using React best practices such as functional components and PropTypes (as of Dec 2018), after diving head-first into the framework in previous projects.
+I used a test-driven approach for this project, with Jest, Enzyme, and Cypress as my testing technologies. This is also my first project using React best practices (as of Dec 2018) such as functional components and PropTypes, after diving head-first into the framework in previous projects.
 
 ## Installation
 - Clone the repository
