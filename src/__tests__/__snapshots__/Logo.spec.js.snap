@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "alt": "logo",
       "className": "logo",
-      "src": "shallot.png",
+      "src": "logo.png",
     },
     "ref": null,
     "rendered": null,
@@ -33,7 +33,7 @@ ShallowWrapper {
       "props": Object {
         "alt": "logo",
         "className": "logo",
-        "src": "shallot.png",
+        "src": "logo.png",
       },
       "ref": null,
       "rendered": null,
