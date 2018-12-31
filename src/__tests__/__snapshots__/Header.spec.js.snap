@@ -18,12 +18,26 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <base
+          href="/"
+        />,
         <Title />,
         <Logo />,
       ],
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "href": "/",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "base",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -52,12 +66,26 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <base
+            href="/"
+          />,
           <Title />,
           <Logo />,
         ],
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "href": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "base",
+        },
         Object {
           "instance": null,
           "key": undefined,

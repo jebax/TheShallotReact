@@ -17,6 +17,12 @@ describe('<App />', () => {
     expect(wrapper.find('header').length).toEqual(1)
   })
 
+  it('renders a base element', () => {
+    const base = wrapper.find('base')
+
+    expect(base.props().href).toEqual('/')
+  })
+
   it('renders the Title', () => {
     expect(wrapper.find('Title').length).toEqual(1)
   })
