@@ -30,6 +30,17 @@ a:visited:hover {
   color: #E9CAD0;
 }
 
+header {
+  display: inline-block;
+  text-align: center;
+  margin-top: 8vh;
+}
+
+main {
+  text-align: center;
+  margin-top: 1vw;
+}
+
 .articleImage {
   width: 50%;
   height: 30%;
@@ -47,16 +58,13 @@ a:visited:hover {
   margin-top: 1vw;
 }
 
+.logo {
+  width: 5%;
+  height: 5%;
+}
+
 a#shallotTitle {
   font-size: 5vw;
-}
-
-header {
-  text-align: center;
-  margin-top: 8vh;
-}
-
-main {
-  text-align: center;
-  margin-top: 1vw;
+  margin-right: 1vw;
+  margin-left: 5vw;
 }

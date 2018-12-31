@@ -20,4 +20,8 @@ describe('<App />', () => {
   it('renders the Title', () => {
     expect(wrapper.find('Title').length).toEqual(1)
   })
+
+  it('renders the Logo', () => {
+    expect(wrapper.find('Logo').length).toEqual(1)
+  })
 })
