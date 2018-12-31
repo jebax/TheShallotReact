@@ -11,6 +11,7 @@ const ArticlePreview = ({ id, imageUrl, headline, url }) => {
       <ArticleImage
         imageUrl={imageUrl}
       />
+      <br />
       <Headline
         id={id}
         headline={headline}

@@ -19,15 +19,16 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <img
-        alt=""
-        className="articleImage"
-        src="TestImage"
-      />,
-      "className": "imageWrapper",
+      "alt": "",
+      "className": "articleImage",
+      "src": "TestImage",
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": null,
+    "type": "img",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -39,37 +40,6 @@ ShallowWrapper {
       "ref": null,
       "rendered": null,
       "type": "img",
-    },
-    "type": "figure",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <img
-          alt=""
-          className="articleImage"
-          src="TestImage"
-        />,
-        "className": "imageWrapper",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "alt": "",
-          "className": "articleImage",
-          "src": "TestImage",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "img",
-      },
-      "type": "figure",
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Roboto');
 
+@media only screen and (max-width: 768px) {
+  .articleImage {
+    width: 80% !important;
+    height: 48% !important;
+  }
+
+  .headline {
+    width: 72% !important;
+  }
+}
+
 a {
   font-family: 'Fredoka One', cursive;
   text-decoration: none;
   color: #491D2C;
+  transition: all 0.15s ease 0s;
 }
 
 a:hover {
@@ -18,11 +30,33 @@ a:visited:hover {
   color: #E9CAD0;
 }
 
+.articleImage {
+  width: 50%;
+  height: 30%;
+  margin-top: 5vw;
+  border-radius: 1%;
+  border-width: 1%;
+  border-style: solid;
+  border-color: #491D2C;
+}
+
+.headline {
+  font-size: 2vw;
+  display: inline-block;
+  width: 45%;
+  margin-top: 1vw;
+}
+
 a#shallotTitle {
-  font-size: 3.3vw;
+  font-size: 5vw;
 }
 
 header {
   text-align: center;
-  margin-top: 5vw;
+  margin-top: 8vh;
+}
+
+main {
+  text-align: center;
+  margin-top: 1vw;
 }

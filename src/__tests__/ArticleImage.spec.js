@@ -13,10 +13,6 @@ describe('<ArticleImage />', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('renders an image wrapper', () => {
-    expect(wrapper.find('.imageWrapper').length).toEqual(1)
-  })
-
   it('renders an image', () => {
     expect(wrapper.find('.articleImage').length).toEqual(1)
   })

@@ -26,6 +26,7 @@ ShallowWrapper {
         <ArticleImage
           imageUrl="TestThumbnailUrl"
         />,
+        <br />,
         <Headline
           headline="TestHeadline"
           id={0}
@@ -46,6 +47,15 @@ ShallowWrapper {
         "ref": null,
         "rendered": null,
         "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
       },
       Object {
         "instance": null,
@@ -73,6 +83,7 @@ ShallowWrapper {
           <ArticleImage
             imageUrl="TestThumbnailUrl"
           />,
+          <br />,
           <Headline
             headline="TestHeadline"
             id={0}
@@ -93,6 +104,15 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
         },
         Object {
           "instance": null,

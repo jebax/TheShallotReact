@@ -19,28 +19,26 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": <Link
-        className="headline"
-        replace={false}
-        to={
-          Object {
-            "pathname": "articles/0",
-            "state": Object {
-              "headline": "TestHeadline",
-              "id": 0,
-              "url": "TestUrl",
-            },
-          }
-        }
-      >
-        TestHeadline
-      </Link>,
-      "className": "headlineWrapper",
+      "children": "TestHeadline",
+      "className": "headline",
+      "replace": false,
+      "to": Object {
+        "pathname": "articles/0",
+        "state": Object {
+          "headline": "TestHeadline",
+          "id": 0,
+          "url": "TestUrl",
+        },
+      },
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": "TestHeadline",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
@@ -60,56 +58,6 @@ ShallowWrapper {
       "ref": null,
       "rendered": "TestHeadline",
       "type": [Function],
-    },
-    "type": "span",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <Link
-          className="headline"
-          replace={false}
-          to={
-            Object {
-              "pathname": "articles/0",
-              "state": Object {
-                "headline": "TestHeadline",
-                "id": 0,
-                "url": "TestUrl",
-              },
-            }
-          }
-        >
-          TestHeadline
-        </Link>,
-        "className": "headlineWrapper",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": "TestHeadline",
-          "className": "headline",
-          "replace": false,
-          "to": Object {
-            "pathname": "articles/0",
-            "state": Object {
-              "headline": "TestHeadline",
-              "id": 0,
-              "url": "TestUrl",
-            },
-          },
-        },
-        "ref": null,
-        "rendered": "TestHeadline",
-        "type": [Function],
-      },
-      "type": "span",
     },
   ],
   Symbol(enzyme.__options__): Object {

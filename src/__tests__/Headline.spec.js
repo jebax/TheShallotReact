@@ -18,10 +18,6 @@ describe('<Headline />', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('renders a headline wrapper', () => {
-    expect(wrapper.find('.headlineWrapper').length).toEqual(1)
-  })
-
   it('renders a headline', () => {
     expect(wrapper.find('.headline').length).toEqual(1)
   })

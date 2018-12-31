@@ -4,21 +4,19 @@ import { Link } from 'react-router-dom'
 
 const Headline = ({ id, headline, url }) => {
   return (
-    <span className='headlineWrapper'>
-      <Link
-        to={{
-          pathname: `articles/${id}`,
-          state: {
-            headline: headline,
-            id: id,
-            url: url
-          }
-        }}
-        className='headline'
-      >
-        {headline}
-      </Link>
-    </span>
+    <Link
+      to={{
+        pathname: `articles/${id}`,
+        state: {
+          headline: headline,
+          id: id,
+          url: url
+        }
+      }}
+      className='headline'
+    >
+      {headline}
+    </Link>
   )
 }
 
