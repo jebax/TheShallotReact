@@ -11,6 +11,11 @@
     width: 72% !important;
   }
 
+  .logo {
+    width: 8% !important;
+    height: 8% !important;
+  }
+
   .summaryHeadline {
     font-size: 4vw !important;
     width: 72% !important;
@@ -54,7 +59,7 @@ body {
 header {
   display: inline-block;
   text-align: center;
-  margin-top: 8vh;
+  margin-top: 5vw;
 }
 
 main {
