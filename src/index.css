@@ -58,13 +58,38 @@ main {
   margin-top: 1vw;
 }
 
+.loadingText {
+  font-family: 'Fredoka One', cursive;
+  position: relative;
+  top: 3vw;
+}
+
 .logo {
   width: 5%;
   height: 5%;
 }
 
+.summaryHeadline {
+  font-size: 2vw;
+  display: inline-block;
+  width: 45%;
+  margin-top: 1vw;
+}
+
+.summaryText {
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.summarySentence {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+}
+
 a#shallotTitle {
   font-size: 5vw;
   margin-right: 1vw;
-  margin-left: 5vw;
+  margin-left: 4vw;
 }
