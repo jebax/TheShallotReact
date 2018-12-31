@@ -35,5 +35,13 @@ REACT_APP_AYLIEN_ID=yourappidgoeshere
 }
 ```
 
+## Screenshots
+
+Main articles list, using Guardian API:
+![main page](./public/screenshot1.png)
+
+Article summary page, using Aylien Summarization API:
+![summary page](./public/screenshot2.png)
+
 ## Future plans
 I plan on expanding the app to use multiple different news APIs, allowing the user to switch between sources. I also plan on allowing the user to decide on the category of news and number of results to display.
