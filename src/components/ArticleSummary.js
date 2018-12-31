@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { config } from '../config'
 import PropTypes from 'prop-types'
+import ArticleImage from './ArticleImage'
 import SummaryHeadline from './SummaryHeadline'
 import SummaryText from './SummaryText'
 
@@ -25,6 +26,10 @@ export default class ArticleSummary extends Component {
   render() {
     return (
       <div>
+        <ArticleImage
+          imageUrl={this.props.location.state.imageUrl}
+        />
+        <br />
         <SummaryHeadline
           headline={this.props.location.state.headline}
           url={this.props.location.state.url}

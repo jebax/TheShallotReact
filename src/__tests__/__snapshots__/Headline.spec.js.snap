@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Headline
     headline="TestHeadline"
     id={0}
+    imageUrl="TestThumbnailUrl"
     url="TestUrl"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -29,6 +30,7 @@ ShallowWrapper {
         "state": Object {
           "headline": "TestHeadline",
           "id": 0,
+          "imageUrl": "TestThumbnailUrl",
           "url": "TestUrl",
         },
       },
@@ -51,6 +53,7 @@ ShallowWrapper {
           "state": Object {
             "headline": "TestHeadline",
             "id": 0,
+            "imageUrl": "TestThumbnailUrl",
             "url": "TestUrl",
           },
         },

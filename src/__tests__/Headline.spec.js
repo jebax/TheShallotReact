@@ -9,6 +9,7 @@ describe('<Headline />', () => {
     wrapper = shallow(
       <Headline
         id={0}
+        imageUrl='TestThumbnailUrl'
         headline='TestHeadline'
         url='TestUrl'
       />)

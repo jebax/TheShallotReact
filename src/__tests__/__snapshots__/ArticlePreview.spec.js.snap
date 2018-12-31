@@ -30,6 +30,7 @@ ShallowWrapper {
         <Headline
           headline="TestHeadline"
           id={0}
+          imageUrl="TestThumbnailUrl"
           url="TestUrl"
         />,
       ],
@@ -64,6 +65,7 @@ ShallowWrapper {
         "props": Object {
           "headline": "TestHeadline",
           "id": 0,
+          "imageUrl": "TestThumbnailUrl",
           "url": "TestUrl",
         },
         "ref": null,
@@ -87,6 +89,7 @@ ShallowWrapper {
           <Headline
             headline="TestHeadline"
             id={0}
+            imageUrl="TestThumbnailUrl"
             url="TestUrl"
           />,
         ],
@@ -121,6 +124,7 @@ ShallowWrapper {
           "props": Object {
             "headline": "TestHeadline",
             "id": 0,
+            "imageUrl": "TestThumbnailUrl",
             "url": "TestUrl",
           },
           "ref": null,

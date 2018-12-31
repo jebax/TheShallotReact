@@ -23,6 +23,7 @@ describe('<ArticleSummary />', () => {
     location = {
       state: {
         id: 0,
+        imageUrl: 'TestThumbnailUrl',
         headline: 'TestHeadline',
         url: 'TestUrl'
       }
@@ -32,6 +33,10 @@ describe('<ArticleSummary />', () => {
 
   it('matches the snapshot', () => {
     expect(wrapper).toMatchSnapshot()
+  })
+
+  it('renders the article image', () => {
+    expect(wrapper.find('ArticleImage').length).toEqual(1)
   })
 
   it('has a link to an article', () => {

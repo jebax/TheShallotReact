@@ -9,6 +9,7 @@ ShallowWrapper {
         "state": Object {
           "headline": "TestHeadline",
           "id": 0,
+          "imageUrl": "TestThumbnailUrl",
           "url": "TestUrl",
         },
       }
@@ -28,6 +29,10 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <ArticleImage
+          imageUrl="TestThumbnailUrl"
+        />,
+        <br />,
         <SummaryHeadline
           headline="TestHeadline"
           url="TestUrl"
@@ -47,6 +52,26 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "imageUrl": "TestThumbnailUrl",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -86,6 +111,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <ArticleImage
+            imageUrl="TestThumbnailUrl"
+          />,
+          <br />,
           <SummaryHeadline
             headline="TestHeadline"
             url="TestUrl"
@@ -105,6 +134,26 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "imageUrl": "TestThumbnailUrl",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
         Object {
           "instance": null,
           "key": undefined,
