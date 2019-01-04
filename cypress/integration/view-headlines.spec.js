@@ -3,17 +3,18 @@ describe('Viewing headlines', () => {
     cy.server()
     cy.route(Cypress.env('guardianUrl'), {
       method: 'GET',
-      response: {
-        results: [
-          {
-            webTitle: 'TestHeadline',
-            webUrl: 'TestHeadline',
-            fields: {
-              thumbnail: 'TestThumbnailUrl'
-            }
-          }
-        ]
-      }
+      articles: [
+        {
+          description: 'TestHeadline',
+          url: 'TestUrl',
+          urlToImage: 'TestThumbnailUrl'
+        }
+      ]
+    })
+
+    cy.route(Cypress.env('aylienUrl'), {
+      method: 'GET',
+      sentences: ['One', 'Two', 'Three', 'Four', 'Five']
     })
 
     cy.visit('http://localhost:3000')

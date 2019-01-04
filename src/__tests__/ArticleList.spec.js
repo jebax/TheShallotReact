@@ -13,11 +13,11 @@ describe('<ArticleList />', () => {
 
   beforeAll(() => {
     articles = [
-      { webTitle: 'Title1', webUrl: 'Url1', fields: { thumbnail: 'Img1' } },
-      { webTitle: 'Title2', webUrl: 'Url2', fields: { thumbnail: 'Img2' } },
-      { webTitle: 'Title3', webUrl: 'Url3', fields: { thumbnail: 'Img3' } }
+      { description: 'Title1', url: 'Url1', urlToImage: 'Img1' },
+      { description: 'Title2', url: 'Url2', urlToImage: 'Img2' },
+      { description: 'Title3', url: 'Url3', urlToImage: 'Img3' },
     ]
-    let response = { data: { response: { results: articles } } }
+    let response = { data: { articles: articles } }
     axios.get.mockResolvedValue(response)
     wrapper = shallow(<ArticleList />)
   })
