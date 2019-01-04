@@ -14,6 +14,9 @@ export default class ArticleList extends Component {
         articles: response.data.articles
       }))
     })
+    .catch(error => {
+      console.log(error)
+    })
   }
 
   render() {

@@ -19,8 +19,10 @@ export default class ArticleSummary extends Component {
       }
     })
     .then(response => {
-      console.log(response)
       this.setState(prevState => ({sentences: response.data.sentences}))
+    })
+    .catch(error => {
+      console.log(error)
     })
   }
 
