@@ -16,9 +16,49 @@ ShallowWrapper {
     "instance": null,
     "key": undefined,
     "nodeType": "host",
-    "props": Object {},
+    "props": Object {
+      "children": Array [
+        <option
+          value="bbc-news"
+        >
+          BBC News
+        </option>,
+        <option
+          value="2"
+        >
+          2
+        </option>,
+      ],
+      "onChange": [Function],
+      "value": "BBC News",
+    },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "BBC News",
+          "value": "bbc-news",
+        },
+        "ref": null,
+        "rendered": "BBC News",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "2",
+          "value": "2",
+        },
+        "ref": null,
+        "rendered": "2",
+        "type": "option",
+      },
+    ],
     "type": "select",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -26,9 +66,49 @@ ShallowWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
-      "props": Object {},
+      "props": Object {
+        "children": Array [
+          <option
+            value="bbc-news"
+          >
+            BBC News
+          </option>,
+          <option
+            value="2"
+          >
+            2
+          </option>,
+        ],
+        "onChange": [Function],
+        "value": "BBC News",
+      },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "BBC News",
+            "value": "bbc-news",
+          },
+          "ref": null,
+          "rendered": "BBC News",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "2",
+            "value": "2",
+          },
+          "ref": null,
+          "rendered": "2",
+          "type": "option",
+        },
+      ],
       "type": "select",
     },
   ],
