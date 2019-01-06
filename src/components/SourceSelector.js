@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 export default class SourceSelector extends Component {
   state = {
     selected: 'BBC News'
   }
 
-  handleChange = (event) => {
+  handleChange = event => {
     this.setState({
       selected: event.target.value
     })
+    this.props.changeFunction(event)
   }
 
   render() {
@@ -23,11 +25,15 @@ export default class SourceSelector extends Component {
           BBC News
         </option>
         <option
-          value='2'
+          value='the-guardian'
         >
-          2
+          The Guardian
         </option>
       </select>
     )
   }
+}
+
+SourceSelector.propTypes = {
+  changeFunction: PropTypes.func
 }

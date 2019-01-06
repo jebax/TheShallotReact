@@ -1,12 +1,16 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import SourceSelector from '../components/SourceSelector'
 
 describe('<SourceSelector />', () => {
   var wrapper
 
   beforeAll(() => {
-    wrapper = shallow(<SourceSelector />)
+    wrapper = shallow(
+      <SourceSelector
+        changeFunction={() => {}}
+      />
+    )
   })
 
   it('matches the snapshot', () => {
@@ -40,5 +44,18 @@ describe('<SourceSelector />', () => {
     selector.simulate('change', { target: { value: 'RandomOption' } })
 
     expect(wrapper.find('select').props().value).toEqual('RandomOption')
+  })
+
+  it('executes its change function when changed', () => {
+    const mountedWrapper = mount(
+      <SourceSelector
+        changeFunction={jest.fn()}
+      />
+    )
+
+    const selector = mountedWrapper.find('select')
+    selector.simulate('change', { target: { value: 'RandomOption' } })
+
+    expect(mountedWrapper.props().changeFunction).toHaveBeenCalledTimes(1)
   })
 })
