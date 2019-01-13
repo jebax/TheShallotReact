@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { config } from '../config.js'
+import SourceSelector from './SourceSelector'
 import ArticlePreview from './ArticlePreview'
 
 export default class ArticleList extends Component {
@@ -9,7 +10,21 @@ export default class ArticleList extends Component {
   }
 
   componentDidMount() {
-    axios.get(config.guardianUrl).then(response => {
+    axios.get(
+      `${config.newsUrl}the-guardian-uk&apiKey=${process.env.REACT_APP_NEWS_KEY}`
+    )
+    .then(response => {
+      this.setState(prevState => ({
+        articles: response.data.articles
+      }))
+    })
+  }
+
+  handleChange = event => {
+    axios.get(
+      `${config.newsUrl}${event.target.value}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
+    )
+    .then(response => {
       this.setState(prevState => ({
         articles: response.data.articles
       }))
@@ -21,6 +36,10 @@ export default class ArticleList extends Component {
       <div
         id='articleList'
       >
+        <SourceSelector
+          changeFunction={this.handleChange}
+        />
+
         {this.state.articles.map((article, index) => {
           return (
             <ArticlePreview

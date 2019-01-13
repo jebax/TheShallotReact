@@ -18,29 +18,45 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <ArticlePreview
-          headline="Title1"
-          id={0}
-          imageUrl="Img1"
-          url="Url1"
+        <SourceSelector
+          changeFunction={[Function]}
         />,
-        <ArticlePreview
-          headline="Title2"
-          id={1}
-          imageUrl="Img2"
-          url="Url2"
-        />,
-        <ArticlePreview
-          headline="Title3"
-          id={2}
-          imageUrl="Img3"
-          url="Url3"
-        />,
+        Array [
+          <ArticlePreview
+            headline="Title1"
+            id={0}
+            imageUrl="Img1"
+            url="Url1"
+          />,
+          <ArticlePreview
+            headline="Title2"
+            id={1}
+            imageUrl="Img2"
+            url="Url2"
+          />,
+          <ArticlePreview
+            headline="Title3"
+            id={2}
+            imageUrl="Img3"
+            url="Url3"
+          />,
+        ],
       ],
       "id": "articleList",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "changeFunction": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": "0",
@@ -93,29 +109,45 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <ArticlePreview
-            headline="Title1"
-            id={0}
-            imageUrl="Img1"
-            url="Url1"
+          <SourceSelector
+            changeFunction={[Function]}
           />,
-          <ArticlePreview
-            headline="Title2"
-            id={1}
-            imageUrl="Img2"
-            url="Url2"
-          />,
-          <ArticlePreview
-            headline="Title3"
-            id={2}
-            imageUrl="Img3"
-            url="Url3"
-          />,
+          Array [
+            <ArticlePreview
+              headline="Title1"
+              id={0}
+              imageUrl="Img1"
+              url="Url1"
+            />,
+            <ArticlePreview
+              headline="Title2"
+              id={1}
+              imageUrl="Img2"
+              url="Url2"
+            />,
+            <ArticlePreview
+              headline="Title3"
+              id={2}
+              imageUrl="Img3"
+              url="Url3"
+            />,
+          ],
         ],
         "id": "articleList",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "changeFunction": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": "0",

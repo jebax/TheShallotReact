@@ -32,10 +32,29 @@ describe('<ArticleList />', () => {
 
   it('fetches information from the correct API url when mounted', () => {
     expect(axios.get).toHaveBeenCalledTimes(1)
-    expect(axios.get).toHaveBeenCalledWith(config.guardianUrl)
+    expect(axios.get).toHaveBeenCalledWith(
+      `${config.newsUrl}the-guardian-uk&apiKey=${process.env.REACT_APP_NEWS_KEY}`
+    )
   })
 
   it('renders number of article previews based on API response number', () => {
     expect(wrapper.find('ArticlePreview').length).toEqual(articles.length)
+  })
+
+  it('renders the SourceSelector', () => {
+    expect(wrapper.find('SourceSelector').length).toEqual(1)
+  })
+
+  it('fetches from the correct API url when changing SourceSelector', () => {
+    const selector = wrapper.find('SourceSelector')
+
+    const event = { target: { value: 'testUrl' } }
+
+    selector.props().changeFunction(event)
+
+    expect(axios.get).toHaveBeenCalledTimes(2)
+    expect(axios.get).toHaveBeenCalledWith(
+      `${config.newsUrl}${event.target.value}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
+    )
   })
 })

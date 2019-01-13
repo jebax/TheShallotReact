@@ -25,7 +25,7 @@ export default class SourceSelector extends Component {
           BBC News
         </option>
         <option
-          value='the-guardian'
+          value='the-guardian-uk'
         >
           The Guardian
         </option>
@@ -35,5 +35,5 @@ export default class SourceSelector extends Component {
 }
 
 SourceSelector.propTypes = {
-  changeFunction: PropTypes.func
+  changeFunction: PropTypes.func.isRequired
 }
