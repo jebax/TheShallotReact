@@ -1,5 +1,5 @@
 # The Shallot in React [![Build Status](https://travis-ci.org/jebax/TheShallotReact.svg?branch=master)](https://travis-ci.org/jebax/TheShallotReact) [![codecov](https://codecov.io/gh/jebax/TheShallotReact/branch/master/graph/badge.svg)](https://codecov.io/gh/jebax/TheShallotReact) [![Maintainability](https://api.codeclimate.com/v1/badges/64da5abffe3c3bcbeb2a/maintainability)](https://codeclimate.com/github/jebax/TheShallotReact/maintainability)
-*The Shallot* is a single-page news summary app, using the [News API](https://newsapi.org/) to fetch news headlines and thumbnails. Clicking on a headline will display a short summary of the article (using the [Aylien Summarization API](https://aylien.com/text-api/summarization/)), and then clicking on the headline again will link the user to the original article.
+*The Shallot* is a single-page news summary app, using the [News API](https://newsapi.org/) to fetch news headlines and thumbnails. Clicking on a headline will display a short summary of the article (using the [Aylien Summarization API](https://aylien.com/text-api/summarization/)), and then clicking on the headline again will link the user to the original article. The user can switch between various news sources using a dropdown box in the top right corner (defaults to BBC News).
 
 This is a React re-imagining of [this](https://github.com/jebax/TheShallotSummary) vanilla JS project. After learning how amazing React is for creating single-page apps, I decided I had to give this a go!
 
@@ -39,11 +39,11 @@ REACT_APP_AYLIEN_ID=yourappidgoeshere
 
 ## Screenshots
 
-Main articles list, using News API:
+Main articles list, using News API to fetch results from BBC News:
 ![main page](./public/screenshot1.png)
 
-Article summary page, using Aylien Summarization API:
-![summary page](./public/screenshot2.png)
+The user can choose between various news sources in the right-hand corner:
+![choose source](./public/screenshot2.png)
 
-## Future plans
-I plan on expanding the app to use multiple different news APIs, allowing the user to switch between sources. I also plan on allowing the user to decide on the category of news and number of results to display.
+Article summary page, using Aylien Summarization API:
+![summary page](./public/screenshot3.png)
