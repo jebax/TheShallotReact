@@ -30,6 +30,41 @@ ShallowWrapper {
         >
           The Guardian
         </option>,
+        <option
+          value="financial-times"
+        >
+          Financial Times
+        </option>,
+        <option
+          value="google-news"
+        >
+          Google News
+        </option>,
+        <option
+          value="national-geographic"
+        >
+          National Geographic
+        </option>,
+        <option
+          value="techradar"
+        >
+          TechRadar
+        </option>,
+        <option
+          value="time"
+        >
+          Time
+        </option>,
+        <option
+          value="vice-news"
+        >
+          Vice News
+        </option>,
+        <option
+          value="wired"
+        >
+          Wired
+        </option>,
       ],
       "onChange": [Function],
       "value": "BBC News",
@@ -60,6 +95,90 @@ ShallowWrapper {
         "rendered": "The Guardian",
         "type": "option",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Financial Times",
+          "value": "financial-times",
+        },
+        "ref": null,
+        "rendered": "Financial Times",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Google News",
+          "value": "google-news",
+        },
+        "ref": null,
+        "rendered": "Google News",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "National Geographic",
+          "value": "national-geographic",
+        },
+        "ref": null,
+        "rendered": "National Geographic",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "TechRadar",
+          "value": "techradar",
+        },
+        "ref": null,
+        "rendered": "TechRadar",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Time",
+          "value": "time",
+        },
+        "ref": null,
+        "rendered": "Time",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Vice News",
+          "value": "vice-news",
+        },
+        "ref": null,
+        "rendered": "Vice News",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Wired",
+          "value": "wired",
+        },
+        "ref": null,
+        "rendered": "Wired",
+        "type": "option",
+      },
     ],
     "type": "select",
   },
@@ -79,6 +198,41 @@ ShallowWrapper {
             value="the-guardian-uk"
           >
             The Guardian
+          </option>,
+          <option
+            value="financial-times"
+          >
+            Financial Times
+          </option>,
+          <option
+            value="google-news"
+          >
+            Google News
+          </option>,
+          <option
+            value="national-geographic"
+          >
+            National Geographic
+          </option>,
+          <option
+            value="techradar"
+          >
+            TechRadar
+          </option>,
+          <option
+            value="time"
+          >
+            Time
+          </option>,
+          <option
+            value="vice-news"
+          >
+            Vice News
+          </option>,
+          <option
+            value="wired"
+          >
+            Wired
           </option>,
         ],
         "onChange": [Function],
@@ -108,6 +262,90 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "The Guardian",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Financial Times",
+            "value": "financial-times",
+          },
+          "ref": null,
+          "rendered": "Financial Times",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Google News",
+            "value": "google-news",
+          },
+          "ref": null,
+          "rendered": "Google News",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "National Geographic",
+            "value": "national-geographic",
+          },
+          "ref": null,
+          "rendered": "National Geographic",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "TechRadar",
+            "value": "techradar",
+          },
+          "ref": null,
+          "rendered": "TechRadar",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Time",
+            "value": "time",
+          },
+          "ref": null,
+          "rendered": "Time",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Vice News",
+            "value": "vice-news",
+          },
+          "ref": null,
+          "rendered": "Vice News",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Wired",
+            "value": "wired",
+          },
+          "ref": null,
+          "rendered": "Wired",
           "type": "option",
         },
       ],

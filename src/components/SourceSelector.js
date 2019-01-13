@@ -29,6 +29,41 @@ export default class SourceSelector extends Component {
         >
           The Guardian
         </option>
+        <option
+          value='financial-times'
+        >
+          Financial Times
+        </option>
+        <option
+          value='google-news'
+        >
+          Google News
+        </option>
+        <option
+          value='national-geographic'
+        >
+          National Geographic
+        </option>
+        <option
+          value='techradar'
+        >
+          TechRadar
+        </option>
+        <option
+          value='time'
+        >
+          Time
+        </option>
+        <option
+          value='vice-news'
+        >
+          Vice News
+        </option>
+        <option
+          value='wired'
+        >
+          Wired
+        </option>
       </select>
     )
   }

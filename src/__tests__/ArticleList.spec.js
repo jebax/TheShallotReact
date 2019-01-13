@@ -33,7 +33,7 @@ describe('<ArticleList />', () => {
   it('fetches information from the correct API url when mounted', () => {
     expect(axios.get).toHaveBeenCalledTimes(1)
     expect(axios.get).toHaveBeenCalledWith(
-      `${config.newsUrl}the-guardian-uk&apiKey=${process.env.REACT_APP_NEWS_KEY}`
+      `${config.newsUrl}bbc-news&apiKey=${process.env.REACT_APP_NEWS_KEY}`
     )
   })
 

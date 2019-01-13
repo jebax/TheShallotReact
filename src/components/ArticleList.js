@@ -11,7 +11,7 @@ export default class ArticleList extends Component {
 
   componentDidMount() {
     axios.get(
-      `${config.newsUrl}the-guardian-uk&apiKey=${process.env.REACT_APP_NEWS_KEY}`
+      `${config.newsUrl}bbc-news&apiKey=${process.env.REACT_APP_NEWS_KEY}`
     )
     .then(response => {
       this.setState(prevState => ({
