@@ -93,6 +93,14 @@ main {
   height: 5%;
 }
 
+.sourceSelector {
+  font-size: 1vw;
+  font-family: 'Fredoka One', cursive;
+  position: fixed;
+  right: 1vw;
+  top: 1vw;
+}
+
 .summaryHeadline {
   font-size: 2vw;
   display: inline-block;
@@ -115,5 +123,8 @@ main {
 a#shallotTitle {
   font-size: 5vw;
   margin-right: 1vw;
-  margin-left: 4vw;
+}
+
+div#appWrapper {
+  text-align: center;
 }

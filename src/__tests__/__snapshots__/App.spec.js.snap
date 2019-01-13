@@ -17,7 +17,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <div>
+      "children": <div
+        id="appWrapper"
+      >
         <Header />
         <main>
           <Switch>
@@ -58,6 +60,7 @@ ShallowWrapper {
             </Switch>
           </main>,
         ],
+        "id": "appWrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -151,7 +154,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <div>
+        "children": <div
+          id="appWrapper"
+        >
           <Header />
           <main>
             <Switch>
@@ -192,6 +197,7 @@ ShallowWrapper {
               </Switch>
             </main>,
           ],
+          "id": "appWrapper",
         },
         "ref": null,
         "rendered": Array [

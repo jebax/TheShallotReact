@@ -7,7 +7,9 @@ import ArticleSummary from './ArticleSummary'
 const App = () => {
   return (
     <Router>
-      <div>
+      <div
+        id='appWrapper'
+      >
         <Header />
         <main>
           <Switch>

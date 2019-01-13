@@ -18,6 +18,7 @@ export default class SourceSelector extends Component {
       <select
         value={this.state.selected}
         onChange={this.handleChange}
+        className='sourceSelector'
       >
         <option
           value='bbc-news'
