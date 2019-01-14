@@ -7,11 +7,11 @@ describe('Viewing an article', () => {
       sentences: ['One', 'Two', 'Three', 'Four', 'Five']
     })
 
-    cy.route(Cypress.env('guardianUrl'), {
+    cy.route(Cypress.env('newsUrl'), {
       method: 'GET',
       articles: [
         {
-          description: 'TestHeadline',
+          title: 'TestHeadline',
           url: 'TestUrl',
           urlToImage: 'TestThumbnailUrl'
         }

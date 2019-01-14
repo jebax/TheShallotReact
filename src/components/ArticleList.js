@@ -10,8 +10,12 @@ export default class ArticleList extends Component {
   }
 
   componentDidMount() {
+    if (!sessionStorage.currentProvider) {
+      sessionStorage.setItem('currentProvider', 'bbc-news')
+    }
+
     axios.get(
-      `${config.newsUrl}bbc-news&apiKey=${process.env.REACT_APP_NEWS_KEY}`
+      `${config.newsUrl}${sessionStorage.currentProvider}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
     )
     .then(response => {
       this.setState(prevState => ({
@@ -21,10 +25,13 @@ export default class ArticleList extends Component {
   }
 
   handleChange = event => {
+    sessionStorage.setItem('currentProvider', event.target.value)
+
     axios.get(
-      `${config.newsUrl}${event.target.value}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
+      `${config.newsUrl}${sessionStorage.currentProvider}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
     )
     .then(response => {
+      console.log(response)
       this.setState(prevState => ({
         articles: response.data.articles
       }))
@@ -46,7 +53,7 @@ export default class ArticleList extends Component {
               key={index}
               id={index}
               imageUrl={article.urlToImage}
-              headline={article.description}
+              headline={article.title}
               url={article.url}
             />
           )

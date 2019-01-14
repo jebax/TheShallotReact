@@ -13,9 +13,9 @@ describe('<ArticleList />', () => {
 
   beforeAll(() => {
     articles = [
-      { description: 'Title1', url: 'Url1', urlToImage: 'Img1' },
-      { description: 'Title2', url: 'Url2', urlToImage: 'Img2' },
-      { description: 'Title3', url: 'Url3', urlToImage: 'Img3' },
+      { title: 'Title1', url: 'Url1', urlToImage: 'Img1' },
+      { title: 'Title2', url: 'Url2', urlToImage: 'Img2' },
+      { title: 'Title3', url: 'Url3', urlToImage: 'Img3' },
     ]
     let response = { data: { articles: articles } }
     axios.get.mockResolvedValue(response)
