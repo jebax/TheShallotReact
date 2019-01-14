@@ -31,7 +31,6 @@ export default class ArticleList extends Component {
       `${config.newsUrl}${sessionStorage.currentProvider}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
     )
     .then(response => {
-      console.log(response)
       this.setState(prevState => ({
         articles: response.data.articles
       }))
