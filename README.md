@@ -32,7 +32,7 @@ REACT_APP_AYLIEN_ID=yourappidgoeshere
 
 ```
 {
-  "guardianUrl": "`https://newsapi.org/v2/top-headlines?sources=the-guardian-uk&apiKey=yourkeygoeshere",
+  "newsUrl": "`https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=yourkeygoeshere",
   "aylienUrl": "https://cors-anywhere.herokuapp.com/https://api.aylien.com/api/v1/summarize?url=http://localhost:3000/TestUrl"
 }
 ```
