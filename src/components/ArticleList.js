@@ -14,17 +14,16 @@ export default class ArticleList extends Component {
       sessionStorage.setItem('currentProvider', 'bbc-news')
     }
 
-    axios.get(
-      `${config.newsUrl}${sessionStorage.currentProvider}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
-    )
-    .then(response => {
-      this.setState({ articles: response.data.articles })
-    })
+    this.getNews()
   }
 
   handleChange = event => {
     sessionStorage.setItem('currentProvider', event.target.value)
 
+    this.getNews()
+  }
+
+  getNews = () => {
     axios.get(
       `${config.newsUrl}${sessionStorage.currentProvider}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
     )
