@@ -47,7 +47,6 @@ describe('<ArticleList />', () => {
 
   it('fetches from the correct API url when changing SourceSelector', () => {
     const selector = wrapper.find('SourceSelector')
-
     const event = { target: { value: 'testUrl' } }
 
     selector.props().changeFunction(event)
@@ -56,5 +55,17 @@ describe('<ArticleList />', () => {
     expect(axios.get).toHaveBeenCalledWith(
       `${config.newsUrl}${event.target.value}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
     )
+  })
+
+  it('sets sessionStorage correctly when changing SourceSelector', () => {
+    global.sessionStorage = {}
+
+    const secondWrapper = shallow(<ArticleList />)
+    const selector = secondWrapper.find('SourceSelector')
+    const event= { target: { value: 'secondUrl' } }
+
+    selector.props().changeFunction(event)
+
+    expect(global.sessionStorage.currentProvider).toEqual('secondUrl')
   })
 })
