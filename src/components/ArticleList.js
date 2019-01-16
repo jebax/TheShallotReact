@@ -18,9 +18,7 @@ export default class ArticleList extends Component {
       `${config.newsUrl}${sessionStorage.currentProvider}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
     )
     .then(response => {
-      this.setState(prevState => ({
-        articles: response.data.articles
-      }))
+      this.setState({ articles: response.data.articles })
     })
   }
 
@@ -31,9 +29,7 @@ export default class ArticleList extends Component {
       `${config.newsUrl}${sessionStorage.currentProvider}&apiKey=${process.env.REACT_APP_NEWS_KEY}`
     )
     .then(response => {
-      this.setState(prevState => ({
-        articles: response.data.articles
-      }))
+      this.setState({ articles: response.data.articles })
     })
   }
 
