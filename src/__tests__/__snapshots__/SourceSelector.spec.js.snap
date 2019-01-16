@@ -68,7 +68,7 @@ ShallowWrapper {
       ],
       "className": "sourceSelector",
       "onChange": [Function],
-      "value": "BBC News",
+      "selected": "BBC News",
     },
     "ref": null,
     "rendered": Array [
@@ -238,7 +238,7 @@ ShallowWrapper {
         ],
         "className": "sourceSelector",
         "onChange": [Function],
-        "value": "BBC News",
+        "selected": "BBC News",
       },
       "ref": null,
       "rendered": Array [

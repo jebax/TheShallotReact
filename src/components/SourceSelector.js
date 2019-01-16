@@ -7,16 +7,17 @@ export default class SourceSelector extends Component {
   }
 
   handleChange = event => {
-    this.setState({
-      selected: event.target.value
-    })
+    const index = event.target.selectedIndex
+    const selected = event.target[index].text
+
+    this.setState({ selected: selected })
     this.props.changeFunction(event)
   }
 
   render() {
     return (
       <select
-        value={this.state.selected}
+        selected={this.state.selected}
         onChange={this.handleChange}
         className='sourceSelector'
       >

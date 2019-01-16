@@ -31,31 +31,11 @@ describe('<SourceSelector />', () => {
   it('should default to BBC News, and have BBC as first option', () => {
     const selector = wrapper.find('select')
 
-    expect(selector.props().value).toEqual('BBC News')
+    expect(selector.props().selected).toEqual('BBC News')
 
     selector.simulate('click')
 
     const firstOption = wrapper.find('option').first()
     expect(firstOption.text()).toEqual('BBC News')
-  })
-
-  it('changes its value correctly', () => {
-    const selector = wrapper.find('select')
-    selector.simulate('change', { target: { value: 'RandomOption' } })
-
-    expect(wrapper.find('select').props().value).toEqual('RandomOption')
-  })
-
-  it('executes its change function when changed', () => {
-    const mountedWrapper = mount(
-      <SourceSelector
-        changeFunction={jest.fn()}
-      />
-    )
-
-    const selector = mountedWrapper.find('select')
-    selector.simulate('change', { target: { value: 'RandomOption' } })
-
-    expect(mountedWrapper.props().changeFunction).toHaveBeenCalledTimes(1)
   })
 })
