@@ -19,7 +19,7 @@ export default class ArticleSummary extends Component {
       }
     })
     .then(response => {
-      this.setState(prevState => ({sentences: response.data.sentences}))
+      this.setState({ sentences: response.data.sentences })
     })
   }
 
