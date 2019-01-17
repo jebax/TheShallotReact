@@ -38,4 +38,24 @@ describe('<SourceSelector />', () => {
     const firstOption = wrapper.find('option').first()
     expect(firstOption.text()).toEqual('BBC News')
   })
+
+  it('changes its value correctly', () => {
+    const selector = wrapper.find('select')
+    selector.simulate('change', { target: { 0: { text: 'RandomOption'}, selectedIndex: 0 } })
+
+    expect(wrapper.find('select').props().selected).toEqual('RandomOption')
+  })
+
+  it('executes its change function when changed', () => {
+    const mountedWrapper = mount(
+      <SourceSelector
+        changeFunction={jest.fn()}
+      />
+    )
+
+    const selector = mountedWrapper.find('select')
+    selector.simulate('change', { target: { 0: { text: 'RandomOption'}, selectedIndex: 0 } })
+
+    expect(mountedWrapper.props().changeFunction).toHaveBeenCalledTimes(1)
+  })
 })
